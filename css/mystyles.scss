@@ -1,0 +1,284 @@
+// Type 'compass watch' in the console, while in the site directory, to start the SCSS program.
+
+$nightOwlGray: #363636;
+$nightOwlBlue: #1b75ba;
+$nightOwlGreen: #071C22;
+$nightOwlSky: #0f435b;
+$nightOwlTextColor: #9ea8b3;
+
+$mainColor: #B52725;
+
+//$bubbleColor: rgba(15, 67, 91, 0.3);
+$bubbleColor: #092833;
+$embossedBorder: rgba(0, 0, 0, 0.55) transparent rgba(255, 255, 255, 0.07) transparent;
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: ":)";
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0;
+}
+
+.clearboth {
+  clear: both;
+}
+
+body {
+  /*
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  cursor: default;
+  */
+}
+
+p {
+  color: $nightOwlTextColor;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+}
+
+.topBand a, #navBand a {
+  color: #FFFFFF;
+}
+
+.spacer {
+  height: 20px;
+}
+
+h6 a {
+  font-weight: bold;
+  color: white;
+}
+
+// ============== HEADER AREA ==============
+
+header{
+  background-color: $mainColor;
+  height: 160px;
+  width: 100%;
+}
+
+.topBand {
+  background-color: $nightOwlGray;
+  padding: 20px 0;
+  li {
+	padding-bottom: 0;
+  }
+  h3 {
+	color: $nightOwlBlue;
+  }
+}
+
+.socialIcon {
+  width: 60px;
+  height: 40px;
+}
+
+#phoneNumber {
+  color: $nightOwlBlue;
+  margin: 0;
+  a {
+	color: $nightOwlBlue;
+  }
+}
+
+.navBand {
+  background-color: #111111;
+  width: 100%;
+}
+
+// ============== SCROLLER AREA ==============
+
+// ============== MAIN AREA ==============
+
+#mainBand {
+  position: relative;
+  background-color: $nightOwlGreen;
+  width: 100%;
+  padding: 20px 0;
+  //min-height: 3000px;
+}
+
+#ourDifference {
+  //background: rgba(255, 255, 255, 0.05);
+  background: $bubbleColor;
+  color: white;
+  padding-top: 5px;
+  margin-bottom: 20px;
+  strong {
+	color: $nightOwlBlue;
+  }
+  p {
+	margin-bottom: 10px;
+  }
+}
+
+.icon {
+  width: auto;
+  height: 18px;
+  //margin-right: 5px;
+  margin: -3px 10px 0 0;
+}
+
+hr.embossed {
+  border-width: 1px 0px;
+  border-color: $embossedBorder
+}
+
+// ============== WHATS NEW AREA ==============
+
+#whatsNew {
+  color: $nightOwlTextColor;
+  ul {
+	list-style: none;
+	li {
+	  //height: 15px;
+	}
+  }
+}
+
+// ============== TESTIMONIALS AREA ==============
+
+.bubble {
+  position: relative;
+  padding: 10px;
+  background: $bubbleColor;
+}
+
+.bubble:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 10px 0;
+  border-color: $bubbleColor transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  bottom: -15px;
+  left: 23px;
+}
+
+.testimonial-name {
+  color: white;
+  line-height: 1em;
+}
+
+.testimonial-company {
+  font-size: .75em;
+  color: white;
+}
+
+// ============== PORTFOLIO ==============
+.portMenuBand{
+  width: 100%;
+  //background-color: lightgray;
+}
+.portfolioBand {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.portfolioItem{
+  text-align: center;
+  img{
+	border: 1px solid #DDDDDD;
+  }
+  p {
+	font-weight: bold;
+	font-size: 14px;
+	color: #363636;
+  }
+}
+
+.portfolio-menu {
+  li {
+	display: inline;
+	border-left: 1px solid #DDDDDD;
+	padding: 0 15px;
+  }
+  li:first-child {
+	border-left: none;
+	//padding-left: 0;
+  }
+  a {
+	//color: red;
+  }
+}
+
+// ============== FOOTER AREA ==============
+
+.footerBand {
+  background-color: lightgray;
+  padding: 20px 0;
+  width: 100%;
+}
+
+// ============== ASIDE AREA ==============
+
+aside {
+  background-color: $nightOwlGreen;
+}
+
+// ============== MEDIA QUERIES ==============
+
+/* Large screens */
+@media only screen and (min-width: 940px) {
+
+  .mobilesOnly {
+	display: none;
+  }
+  .desktopOnly {
+	display: inline-block;
+  }
+
+  #cloudBackground {
+	background-position: 100% 20px;
+  }
+
+}
+
+/* Medium screens */
+@media only screen and (max-width: 939px) and (min-width: 768px) {
+
+  .mobilesOnly {
+	display: none;
+  }
+  .desktopOnly {
+	display: inline-block;
+  }
+
+  #cloudBackground {
+	background-position: 100% 20px;
+  }
+
+}
+
+/* Small screens */
+@media only screen and (max-width: 767px) {
+
+  .mobilesOnly {
+	display: inline-block;
+  }
+  .desktopOnly {
+	display: none;
+  }
+
+  #cloudBackground {
+	background-position: 100% 20px;
+  }
+
+}
