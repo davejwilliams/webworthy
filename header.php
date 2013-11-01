@@ -33,7 +33,7 @@
 
 </head>
 
-<header>
+<header class="mainHeader">
 	<div class="row">
 		<img src="<?php bloginfo('template_directory'); ?>/img/wwd-logo.jpg">
 	</div>

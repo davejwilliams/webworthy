@@ -1,12 +1,9 @@
 // Type 'compass watch' in the console, while in the site directory, to start the SCSS program.
 
-$nightOwlGray: #363636;
-$nightOwlBlue: #1b75ba;
-$nightOwlGreen: #071C22;
-$nightOwlSky: #0f435b;
-$nightOwlTextColor: #9ea8b3;
-
 $mainColor: #B52725;
+$secondaryColor: #FFFFFF;
+$navColor: #111111;
+$textColor: gray;
 
 //$bubbleColor: rgba(15, 67, 91, 0.3);
 $bubbleColor: #092833;
@@ -44,7 +41,7 @@ body {
 }
 
 p {
-  color: $nightOwlTextColor;
+  color: $textColor;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -66,38 +63,14 @@ h6 a {
 
 // ============== HEADER AREA ==============
 
-header{
+header.mainHeader{
   background-color: $mainColor;
   height: 160px;
   width: 100%;
 }
 
-.topBand {
-  background-color: $nightOwlGray;
-  padding: 20px 0;
-  li {
-	padding-bottom: 0;
-  }
-  h3 {
-	color: $nightOwlBlue;
-  }
-}
-
-.socialIcon {
-  width: 60px;
-  height: 40px;
-}
-
-#phoneNumber {
-  color: $nightOwlBlue;
-  margin: 0;
-  a {
-	color: $nightOwlBlue;
-  }
-}
-
 .navBand {
-  background-color: #111111;
+  background-color: $navColor;
   width: 100%;
 }
 
@@ -107,7 +80,7 @@ header{
 
 #mainBand {
   position: relative;
-  background-color: $nightOwlGreen;
+  background-color: $secondaryColor;
   width: 100%;
   padding: 20px 0;
   //min-height: 3000px;
@@ -120,7 +93,7 @@ header{
   padding-top: 5px;
   margin-bottom: 20px;
   strong {
-	color: $nightOwlBlue;
+	color: $textColor;
   }
   p {
 	margin-bottom: 10px;
@@ -142,7 +115,7 @@ hr.embossed {
 // ============== WHATS NEW AREA ==============
 
 #whatsNew {
-  color: $nightOwlTextColor;
+  color: $textColor;
   ul {
 	list-style: none;
 	li {
@@ -230,7 +203,7 @@ hr.embossed {
 // ============== ASIDE AREA ==============
 
 aside {
-  background-color: $nightOwlGreen;
+  background-color: $secondaryColor;
 }
 
 // ============== MEDIA QUERIES ==============

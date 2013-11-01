@@ -11,7 +11,7 @@
 ?>
 
 <article id="page-<?php the_ID(); ?>" <?php post_class(); ?>>
-	
+
 	<div>
 		<h2><?php the_title(); ?></h2>
 	</div>

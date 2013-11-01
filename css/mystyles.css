@@ -26,7 +26,7 @@ body {
   */ }
 
 p {
-  color: #9ea8b3; }
+  color: gray; }
 
 h1, h2, h3, h4, h5, h6 {
   color: white; }
@@ -41,28 +41,10 @@ h6 a {
   font-weight: bold;
   color: white; }
 
-header {
+header.mainHeader {
   background-color: #b52725;
   height: 160px;
   width: 100%; }
-
-.topBand {
-  background-color: #363636;
-  padding: 20px 0; }
-  .topBand li {
-    padding-bottom: 0; }
-  .topBand h3 {
-    color: #1b75ba; }
-
-.socialIcon {
-  width: 60px;
-  height: 40px; }
-
-#phoneNumber {
-  color: #1b75ba;
-  margin: 0; }
-  #phoneNumber a {
-    color: #1b75ba; }
 
 .navBand {
   background-color: #111111;
@@ -70,7 +52,7 @@ header {
 
 #mainBand {
   position: relative;
-  background-color: #071c22;
+  background-color: white;
   width: 100%;
   padding: 20px 0; }
 
@@ -80,7 +62,7 @@ header {
   padding-top: 5px;
   margin-bottom: 20px; }
   #ourDifference strong {
-    color: #1b75ba; }
+    color: gray; }
   #ourDifference p {
     margin-bottom: 10px; }
 
@@ -94,7 +76,7 @@ hr.embossed {
   border-color: rgba(0, 0, 0, 0.55) transparent rgba(255, 255, 255, 0.07) transparent; }
 
 #whatsNew {
-  color: #9ea8b3; }
+  color: gray; }
   #whatsNew ul {
     list-style: none; }
 
@@ -152,7 +134,7 @@ hr.embossed {
   width: 100%; }
 
 aside {
-  background-color: #071c22; }
+  background-color: white; }
 
 /* Large screens */
 @media only screen and (min-width: 940px) {

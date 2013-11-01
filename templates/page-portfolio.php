@@ -19,7 +19,7 @@ get_header(); ?>
 			// Setup for the loop
 
 			$args = array(
-				//'cat' => 'genre',
+				'cat' => 'genre',
 				//'post_type' => 'website',
 				'post_type' => 'portfoliopiece',
 				'genre' => '',

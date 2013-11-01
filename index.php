@@ -27,7 +27,7 @@ get_header(); ?>
 
 			<h2><?php _e('No posts.', 'foundation' ); ?></h2>
 			<p class="lead"><?php _e('Sorry about this, I couldn\'t seem to find what you were looking for.', 'foundation' ); ?></p>
-			
+
 		<?php endif; ?>
 
 		<?php foundation_pagination(); ?>
@@ -38,5 +38,5 @@ get_header(); ?>
 </div>
 <!-- End Page -->
 
-<?php get_sidebar(); ?>
+<?php //get_sidebar(); ?>
 <?php get_footer(); ?>
