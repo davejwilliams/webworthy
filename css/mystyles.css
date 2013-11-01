@@ -15,21 +15,14 @@
   clear: both; }
 
 body {
-  /*
-  padding: 0;
-  margin: 0;
-  font-weight: normal;
-  font-style: normal;
-  line-height: 1;
-  position: relative;
-  cursor: default;
-  */ }
+  font-size: 14px; }
 
 p {
-  color: gray; }
+  color: gray;
+  font-size: 14px; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: white; }
+  color: #b52725; }
 
 .topBand a, #navBand a {
   color: #FFFFFF; }
@@ -38,31 +31,48 @@ h1, h2, h3, h4, h5, h6 {
   height: 20px; }
 
 h6 a {
-  font-weight: bold;
-  color: white; }
+  font-weight: 500;
+  color: #B52725; }
 
 header.mainHeader {
   background-color: #b52725;
-  height: 160px;
-  width: 100%; }
+  width: 100%;
+  padding: 10px 0; }
+
+#contactInfo {
+  text-align: right;
+  padding: 10px 0;
+  color: #ffffff; }
 
 .navBand {
   background-color: #111111;
   width: 100%; }
 
+.top-bar ul li:first-child a {
+  border-left: none; }
+
 #mainBand {
   position: relative;
   background-color: white;
-  width: 100%;
-  padding: 20px 0; }
+  width: 100%; }
 
 #ourDifference {
-  background: #092833;
-  color: white;
-  padding-top: 5px;
-  margin-bottom: 20px; }
+  background: #f6f6f6;
+  text-align: justify;
+  padding: 30px 0 25px 0;
+  margin-bottom: 20px;
+  margin-top: 0; }
   #ourDifference strong {
-    color: gray; }
+    background-color: #b52725;
+    color: #ffffff;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -47px;
+    padding: 5px 50px;
+    font-size: 12px;
+    text-transform: uppercase;
+    z-index: 1000; }
   #ourDifference p {
     margin-bottom: 10px; }
 
@@ -83,14 +93,15 @@ hr.embossed {
 .bubble {
   position: relative;
   padding: 10px;
-  background: #092833; }
+  background: #b52725;
+  color: #ffffff; }
 
 .bubble:after {
   content: '';
   position: absolute;
   border-style: solid;
   border-width: 15px 10px 0;
-  border-color: #092833 transparent;
+  border-color: #b52725 transparent;
   display: block;
   width: 0;
   z-index: 1;
@@ -98,12 +109,10 @@ hr.embossed {
   left: 23px; }
 
 .testimonial-name {
-  color: white;
   line-height: 1em; }
 
 .testimonial-company {
-  font-size: .75em;
-  color: white; }
+  font-size: .75em; }
 
 .portMenuBand {
   width: 100%; }

@@ -2,6 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90678699-70a4-463e-b678-771f256e9cd5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon_email.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon_fb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon_tie.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon_tools.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon_twitter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon_why.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon_youtube.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icons-e-commerce.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icons-graphic-design.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icons-mouse.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icons-seo-social-media.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icons-web-design.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icons-why-us.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icons-wordpress-cms.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/slide-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/slide-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/slide-3.jpg" />
+      <change type="DELETED" beforePath="E:\wamp\www\wordpress\wp-content\themes\webworthy\templates\xxx-portfolio-OLD.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/mystyles.css" afterPath="$PROJECT_DIR$/css/mystyles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/mystyles.scss" afterPath="$PROJECT_DIR$/css/mystyles.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nivo-slider/nivo-slider.css" afterPath="$PROJECT_DIR$/nivo-slider/nivo-slider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/page-home.php" afterPath="$PROJECT_DIR$/templates/page-home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="webworthy.iws" />
@@ -25,19 +49,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/header.php">
+      <file leaf-file-name="mystyles.scss" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/mystyles.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="90" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1105">
+            <state line="37" column="1" selection-start="716" selection-end="716" vertical-scroll-proportion="1.0362438" vertical-offset="0" max-vertical-offset="4777">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page-home.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="page-home.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/page-home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="22" selection-start="1639" selection-end="1639" vertical-scroll-proportion="1.2642405" vertical-offset="0" max-vertical-offset="901">
+            <state line="151" column="35" selection-start="5508" selection-end="5508" vertical-scroll-proportion="-26.76923" vertical-offset="1871" max-vertical-offset="3774">
+              <folding>
+                <element signature="e#7#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="8" selection-start="1083" selection-end="1083" vertical-scroll-proportion="-19.615385" vertical-offset="102" max-vertical-offset="1105">
               <folding />
             </state>
           </provider>
@@ -46,7 +81,16 @@
       <file leaf-file-name="default.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nivo-slider/themes/default/default.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="1" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1666">
+            <state line="27" column="1" selection-start="659" selection-end="659" vertical-scroll-proportion="-18.36" vertical-offset="0" max-vertical-offset="1666">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nivo-slider.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nivo-slider/nivo-slider.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="30" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2006">
               <folding />
             </state>
           </provider>
@@ -55,16 +99,7 @@
       <file leaf-file-name="footer.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="7" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="663">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mystyles.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/mystyles.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="9" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="4454">
+            <state line="33" column="7" selection-start="661" selection-end="661" vertical-scroll-proportion="-16.346153" vertical-offset="0" max-vertical-offset="527">
               <folding />
             </state>
           </provider>
@@ -115,10 +150,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/css/foundation.css" />
-        <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/content-page.php" />
-        <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/category-website.php" />
         <option value="$PROJECT_DIR$/archive-genre.php" />
         <option value="$PROJECT_DIR$/category-genre.php" />
@@ -126,11 +158,14 @@
         <option value="$PROJECT_DIR$/category.php" />
         <option value="$PROJECT_DIR$/content.php" />
         <option value="$PROJECT_DIR$/taxonomy-genre.php" />
-        <option value="$PROJECT_DIR$/css/mystyles.scss" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/fun.php" />
         <option value="$PROJECT_DIR$/nivo-slider/themes/default/default.css" />
+        <option value="$PROJECT_DIR$/nivo-slider/nivo-slider.css" />
+        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/templates/page-home.php" />
+        <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/css/mystyles.scss" />
       </list>
     </option>
   </component>
@@ -322,20 +357,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="inc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webworthy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webworthy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -406,7 +427,11 @@
       <created>1383270244676</created>
       <updated>1383270244676</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add NivoSlider">
+      <created>1383270264875</created>
+      <updated>1383270264875</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -423,7 +448,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -468,13 +493,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xxxcontent.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="996" />
@@ -511,13 +529,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="90" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1105">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/taxonomy-genre.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="0" selection-start="1127" selection-end="1127" vertical-scroll-proportion="0.0" vertical-offset="782" max-vertical-offset="918">
@@ -532,20 +543,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/mystyles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="9" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="4454">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="7" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="663">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nivo-slider/jquery.nivo.slider.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="123" column="80" selection-start="4325" selection-end="4337" vertical-scroll-proportion="0.33298537" vertical-offset="1653" max-vertical-offset="11220">
@@ -553,23 +550,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nivo-slider/nivo-slider.css">
+    <entry file="file://$PROJECT_DIR$/nivo-slider/themes/default/default.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="13" selection-start="1700" selection-end="1712" vertical-scroll-proportion="0.6148301" vertical-offset="1035" max-vertical-offset="2006">
+        <state line="27" column="1" selection-start="659" selection-end="659" vertical-scroll-proportion="-18.36" vertical-offset="0" max-vertical-offset="1666">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nivo-slider/themes/default/default.css">
+    <entry file="file://$PROJECT_DIR$/nivo-slider/nivo-slider.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="1" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1666">
+        <state line="29" column="30" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2006">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="0" selection-start="1755" selection-end="1755" vertical-scroll-proportion="-13.6" vertical-offset="765" max-vertical-offset="2006">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="8" selection-start="1083" selection-end="1083" vertical-scroll-proportion="-19.615385" vertical-offset="102" max-vertical-offset="1105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="7" selection-start="661" selection-end="661" vertical-scroll-proportion="-16.346153" vertical-offset="0" max-vertical-offset="527">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/page-home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="22" selection-start="1639" selection-end="1639" vertical-scroll-proportion="1.2642405" vertical-offset="0" max-vertical-offset="901">
+        <state line="151" column="35" selection-start="5508" selection-end="5508" vertical-scroll-proportion="-26.76923" vertical-offset="1871" max-vertical-offset="3774">
+          <folding>
+            <element signature="e#7#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mystyles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="1" selection-start="716" selection-end="716" vertical-scroll-proportion="1.0362438" vertical-offset="0" max-vertical-offset="4777">
           <folding />
         </state>
       </provider>
