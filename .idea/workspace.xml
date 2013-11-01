@@ -2,57 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90678699-70a4-463e-b678-771f256e9cd5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nivo-slider/themes/bar/arrows.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nivo-slider/themes/dark/arrows.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nivo-slider/themes/default/arrows.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nivo-slider/themes/light/arrows.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nivo-slider/themes/bar/bullets.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nivo-slider/themes/dark/bullets.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nivo-slider/themes/default/bullets.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nivo-slider/themes/light/bullets.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/careers-frontenddev21.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nivo-slider/themes/bar/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nivo-slider/themes/dark/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nivo-slider/themes/default/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nivo-slider/themes/light/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nivo-slider/themes/bar/bar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nivo-slider/themes/dark/dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nivo-slider/themes/default/default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nivo-slider/jquery.nivo.slider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nivo-slider/jquery.nivo.slider.pack.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nivo-slider/themes/light/light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nivo-slider/nivo-slider.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taxonomy-genre.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xxxcontent.php" />
-      <change type="DELETED" beforePath="E:\wamp\www\wordpress\wp-content\themes\webworthy\fancybox\css\jquery.fancybox.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\wordpress\wp-content\themes\webworthy\fancybox\helpers\fancybox_buttons.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\wordpress\wp-content\themes\webworthy\fancybox\helpers\jquery.fancybox-buttons.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\wordpress\wp-content\themes\webworthy\fancybox\helpers\jquery.fancybox-buttons.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\wordpress\wp-content\themes\webworthy\fancybox\helpers\jquery.fancybox-media.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\wordpress\wp-content\themes\webworthy\fancybox\helpers\jquery.fancybox-thumbs.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\wordpress\wp-content\themes\webworthy\fancybox\helpers\jquery.fancybox-thumbs.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\wordpress\wp-content\themes\webworthy\fancybox\images\blank.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\wordpress\wp-content\themes\webworthy\fancybox\images\fancybox_loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\wordpress\wp-content\themes\webworthy\fancybox\images\fancybox_loading@2x.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\wordpress\wp-content\themes\webworthy\fancybox\images\fancybox_overlay.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\wordpress\wp-content\themes\webworthy\fancybox\images\fancybox_sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\wordpress\wp-content\themes\webworthy\fancybox\images\fancybox_sprite@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\wordpress\wp-content\themes\webworthy\fancybox\js\jquery.fancybox.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\wordpress\wp-content\themes\webworthy\fancybox\js\jquery.fancybox.pack.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\wordpress\wp-content\themes\webworthy\fancybox\js\lightbox.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\wordpress\wp-content\themes\webworthy\fancybox\lib\jquery-1.10.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\wordpress\wp-content\themes\webworthy\fancybox\lib\jquery.mousewheel.pack.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\wordpress\wp-content\themes\webworthy\img\slide-01.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content-page.php" afterPath="$PROJECT_DIR$/content-page.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content.php" afterPath="$PROJECT_DIR$/content.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/mystyles.css" afterPath="$PROJECT_DIR$/css/mystyles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/mystyles.scss" afterPath="$PROJECT_DIR$/css/mystyles.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/page-home.php" afterPath="$PROJECT_DIR$/templates/page-home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/page-portfolio.php" afterPath="$PROJECT_DIR$/templates/page-portfolio.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="webworthy.iws" />
@@ -88,7 +37,7 @@
       <file leaf-file-name="page-home.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/page-home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="22" selection-start="1639" selection-end="1639" vertical-scroll-proportion="1.2602524" vertical-offset="0" max-vertical-offset="901">
+            <state line="47" column="22" selection-start="1639" selection-end="1639" vertical-scroll-proportion="1.2642405" vertical-offset="0" max-vertical-offset="901">
               <folding />
             </state>
           </provider>
@@ -453,18 +402,24 @@
       <created>1382898062099</created>
       <updated>1382898062099</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add NivoSlider">
+      <created>1383270244676</created>
+      <updated>1383270244676</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14887941" sideWeight="0.6712329" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14887941" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -506,6 +461,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Add NivoSlider" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add NivoSlider" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -612,7 +569,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/page-home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="22" selection-start="1639" selection-end="1639" vertical-scroll-proportion="1.2602524" vertical-offset="0" max-vertical-offset="901">
+        <state line="47" column="22" selection-start="1639" selection-end="1639" vertical-scroll-proportion="1.2642405" vertical-offset="0" max-vertical-offset="901">
           <folding />
         </state>
       </provider>
