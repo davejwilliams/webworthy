@@ -16,104 +16,56 @@ get_header(); ?>
 
 
 	<!-- Slider -->
-<?php if ( get_field( 'images' ) ): ?>
+<?php if ( get_field( 'nivoslider' ) ): ?>
 	<div class="slider-wrapper theme-default">
 		<div class="ribbon"></div>
 		<div id="slider" class="nivoSlider">
-			<?php while ( the_repeater_field( 'images' ) ): ?>
-				<?php $image = wp_get_attachment_image_src( get_sub_field( 'image' ), 'full' ); ?>
-				<?php $thumb = wp_get_attachment_image_src( get_sub_field( 'image' ), 'thumbnail' ); ?>
-				<img src="<?php echo $image[0]; ?>" alt="<?php the_sub_field( 'title' ); ?>"
-						 rel="<?php echo $thumb[0]; ?>" />
+			<?php while ( has_sub_field( 'nivoslider' ) ): ?>
+				<img src="<?php the_sub_field( 'image' ); ?>" alt="<?php the_sub_field( 'image_alt' ); ?>">
 			<?php endwhile; ?>
 		</div>
-	</div>
 	</div>
 <?php endif; ?>
 
 
-
-
-
-	<!-- Main Content -->
-	<div id="mainBand">
-		<div id="ourDifference">
-			<div class="row">
-				<div class="large-12 columns">
-					<!--				<p>--><?php //the_field('main_blurb'); ?><!--</p>-->
-
-
-					<p><strong>Our Difference</strong>
-						Webworthy Design takes pride in providing a friendly and
-						efficient website design service, working directly with our clients from the initial concept to the
-						final design. Our team will listen to your ideas, dreams and goals and guide you through the
-						implementation of your website. We have worked with businesses of all sizes and understand that each
-						of our client's needs are unique - your website should be too.
-
-						Establishing an online presence enables your company to be in millions
-						of homes at once. We create custom, compelling (often clever) web design and print media for emerging and
-						established brands. We also offer custom-designed websites for larger businesses that need specific database
-						applications or content management solutions. We can even maintain and market your website. We're here to help!
-					</p>
-				</div>
-			</div>
-		</div>
-
+	<!------------ MAIN CONTENT ------------>
+<div id="mainBand">
+	<div id="ourDifference">
 		<div class="row">
-			<div class="large-4 columns">
-				<h6>
-					<img class="icon" src="<?php bloginfo( 'template_directory' ); ?>/img/icons-why-us.png"><a href="#">Why Us?</a>
-				</h6>
-
-				<p>Have you ever bought something expecting it to work as advertised and it didn’t right out of the box?
-					Or, hired someone expecting a certain level of customer service…</p>
-			</div>
-
-			<div class="large-4 columns">
-				<h6>
-					<img class="icon" src="<?php bloginfo( 'template_directory' ); ?>/img/icons-web-design.png"><a href="#">Web Design</a>
-				</h6>
-
-				<p>Your website is the face of your business and it speaks volumes about who you are to your visitors.
-					It’s often the only determining factor in a potential customer’s…</p>
-			</div>
-
-			<div class="large-4 columns">
-				<h6>
-					<img class="icon" src="<?php bloginfo( 'template_directory' ); ?>/img/icons-wordpress-cms.png"><a href="#">WordPress CMS</a>
-				</h6>
-
-				<p>All websites are created in WordPress™. This allows you to easily make edits to your website
-					yourself any time you like. You can manage your own pages, products and…</p>
-			</div>
-
-			<div class="large-4 columns">
-				<h6>
-					<img class="icon" src="<?php bloginfo( 'template_directory' ); ?>/img/icons-e-commerce.png"><a href="#">E-Commerce</a>
-				</h6>
-
-				<p>Whether you only want to sell one product or thousands. Take complete control over your online
-					storefront and give your customers a smooth and seamless…</p>
-			</div>
-
-			<div class="large-4 columns">
-				<h6>
-					<img class="icon" src="<?php bloginfo( 'template_directory' ); ?>/img/icons-seo-social-media.png"><a href="#">SEO & Social Media</a>
-				</h6>
-
-				<p>We use industry standard search engine optimization practices during the development of every
-					website that we build. In today’s competitive…</p>
-			</div>
-
-			<div class="large-4 columns">
-				<h6>
-					<img class="icon" src="<?php bloginfo( 'template_directory' ); ?>/img/icons-graphic-design.png"><a href="#">Graphic Design</a>
-				</h6>
-
-				<p>Once you have a website you will want to make sure that you also look good on paper to tie
-					everything together. We can provide all of the traditional marketing materials…</p>
+			<div class="large-12 columns">
+				<!-- OUR DIFFERENCE ( MAIN CONTENT TEXT ) -->
+				<?php the_content(); ?>
 			</div>
 		</div>
+	</div>
+
+
+	<!------------ MAIN BOXES ------------>
+	<div class="row">
+
+		<?php
+		$args = array(
+			//'orderby'   => 'parent',
+			'order'     => 'asc',
+			'post_type' => 'page',
+			'post__in'  => array( 71, 73, 77, 79, 81, 83 ),
+		);
+		$page_query = new WP_Query( $args ); ?>
+
+		<?php while ( $page_query->have_posts() ) : $page_query->the_post(); ?>
+			<div class="large-4 columns">
+				<h6>
+					<a href="<?php the_permalink(); ?>">
+						<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+							the_post_thumbnail( 'thumbnail', array( 'class' => 'icon' ) );
+						} ?>
+						<?php the_title(); ?></a>
+				</h6>
+
+				<p><?php echo wp_trim_words( get_the_content(), 25 ); ?></p>
+			</div>
+		<?php endwhile; ?>
+		<!------------ END MAIN BOXES ------------>
 
 		<div class="row">
 			<div class="large-12 small-12 columns">
@@ -160,23 +112,30 @@ get_header(); ?>
 
 			<!------------ TESTIMONIALS ------------>
 			<div class="large-6 small-12 columns">
-				<h6><a href="#">Testimonials</a></h6>
+				<h6><a href="<?php echo site_url(); ?>/testimonials">Testimonials</a></h6>
 
-				<p class="bubble">
-					"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam omnis recusandae
-					repellat sit soluta. Animi corporis culpa delectus ea et inventore iste labore modi
-					numquam quo sunt, suscipit tempore vero."
-				</p>
+				<?php $other_page = 92; //ID for Testimonials Page ?>
 
-				<p class="testimonial-name">Lindsay Williams<br>
-					<span class="testimonial-company">Broadway Bound Dance Centre, Toms River, NJ</span>
-				</p>
+				<?php
+				$rows = get_field( 'testimonials', $other_page );
+				$row_count = count( $rows );
+				$i = rand( 0, $row_count - 1 );
+
+				echo "<p class='bubble'>" . $rows[$i]['testimonial'] . "</p>";
+				echo "<p class='testimonial-name'>" . $rows[$i]['person'] . "<br>";
+				echo "<span class='testimonial-company'>" . $rows[$i]['company'] . "</span></p>";
+				?>
+
 			</div>
+
+
 		</div>
 
+
+		<!------------ LATEST WORK ------------>
 		<div class="row">
 			<div class="large-12 columns">
-				<h6>Latest Works</h6>
+				<h6><a href="<?php echo site_url(); ?>/work">Latest Work</a></h6>
 				<ul class="large-block-grid-6 small-block-grid-2">
 					<li><img src="http://placehold.it/350x150"></li>
 					<li><img src="http://placehold.it/350x150"></li>
@@ -192,12 +151,6 @@ get_header(); ?>
 	<!-- END Main Content -->
 
 	<!----------------------------------------------------------------->
-
-
-
-
-
-
 
 
 	<script type="text/javascript">

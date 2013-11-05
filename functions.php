@@ -314,7 +314,16 @@ endif;
  * Custom Post Excerpt
  */
 
+/*
+function custom_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+*/
+
+/*
 if ( ! function_exists( 'foundation_excerpt' ) ) :
+
 
 function foundation_excerpt($text) {
         global $post;
@@ -324,11 +333,12 @@ function foundation_excerpt($text) {
                 $text = str_replace('\]\]\>', ']]&gt;', $text);
                 $text = preg_replace('@<script[^>]*?>.*?</script>@si', '', $text);
                 $text = strip_tags($text, '<p>');
-                $excerpt_length = 80;
+                $excerpt_length = 30;
                 $words = explode(' ', $text, $excerpt_length + 1);
                 if (count($words)> $excerpt_length) {
                         array_pop($words);
-                        array_push($words, '<br><br><a href="'.get_permalink($post->ID) .'" class="button secondary small">' . __('Continue Reading', 'foundation') . '</a>');
+                        //array_push($words, '<br><br><a href="'.get_permalink($post->ID) .'" class="button secondary small">' . __('Continue Reading', 'foundation') . '</a>');
+                        array_push($words, '<a style="margin:0;" href="'.get_permalink($post->ID).'">' . __('...', 'foundation') . '</a>');
                         $text = implode(' ', $words);
                 }
         }
@@ -339,6 +349,7 @@ remove_filter('get_the_excerpt', 'wp_trim_excerpt');
 add_filter('get_the_excerpt', 'foundation_excerpt');
 
 endif;
+*/
 
 /** 
  * Comments Template
@@ -451,23 +462,18 @@ $foundation_shortcodes = trailingslashit( get_template_directory() ) . 'inc/shor
 if (file_exists($foundation_shortcodes)) {
 	require( $foundation_shortcodes );
 }
-
 /**
  * My Functions ------------------------------------------------
  */
-
 // Load Custom Post Types file.
 require get_template_directory() . '/customposttypes.php'
 ?>
-
 <?php
 // Crop images from top/center rather than center/center
 function px_image_resize_dimensions( $payload, $orig_w, $orig_h, $dest_w, $dest_h, $crop ){
-
 // Change this to a conditional that decides whether you want to override the defaults for this image or not.
 	if( false )
 		return $payload;
-
 	if ( $crop ) {
 // crop the largest possible portion of the original image that we can size to $dest_w x $dest_h
 		$aspect_ratio = $orig_w / $orig_h;
@@ -499,15 +505,12 @@ function px_image_resize_dimensions( $payload, $orig_w, $orig_h, $dest_w, $dest_
 
 		list( $new_w, $new_h ) = wp_constrain_dimensions( $orig_w, $orig_h, $dest_w, $dest_h );
 	}
-
 // if the resulting image would be the same size or larger we don't want to resize it
 	if ( $new_w >= $orig_w && $new_h >= $orig_h )
 		return false;
-
 // the return array matches the parameters to imagecopyresampled()
 // int dst_x, int dst_y, int src_x, int src_y, int dst_w, int dst_h, int src_w, int src_h
 	return array( 0, 0, (int) $s_x, (int) $s_y, (int) $new_w, (int) $new_h, (int) $crop_w, (int) $crop_h );
-
 }
 add_filter( 'image_resize_dimensions', 'px_image_resize_dimensions', 10, 6 );
 ?>

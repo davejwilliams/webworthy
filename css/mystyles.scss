@@ -6,26 +6,27 @@ $navColor: #111111;
 $textColor: gray;
 
 //$bubbleColor: rgba(15, 67, 91, 0.3);
-$bubbleColor: #F6F6F6;
+//$bubbleColor: #F6F6F6;
+$bubbleColor: rgba(0, 0, 0, 0.04);
 $embossedBorder: rgba(0, 0, 0, 0.55) transparent rgba(255, 255, 255, 0.07) transparent;
 
 /* apply a natural box layout model to all elements */
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .clearfix::after {
-  content: ":)";
-  clear: both;
-  display: block;
-  visibility: hidden;
-  height: 0;
+	content: ":)";
+	clear: both;
+	display: block;
+	visibility: hidden;
+	height: 0;
 }
 
 .clearboth {
-  clear: both;
+	clear: both;
 }
 
 body {
@@ -33,37 +34,37 @@ body {
 }
 
 p {
-  color: $textColor;
+	color: $textColor;
 	font-size: 14px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $mainColor;
+	color: $mainColor;
 }
 
 .topBand a, #navBand a {
-  color: #FFFFFF;
+	color: #FFFFFF;
 }
 
 .spacer {
-  height: 20px;
+	height: 20px;
 }
 
 h6 a {
-  font-weight: 500;
-  color: #B52725;
+	font-weight: 500;
+	color: #B52725;
 }
 
 // ============== HEADER AREA ==============
 
-header.mainHeader{
-  background-color: $mainColor;
-  width: 100%;
+header.mainHeader {
+	background-color: $mainColor;
+	width: 100%;
 	padding: 10px 0;
 }
 
 #logo {
-//	margin: 5px 0 0 10px;
+	//margin: 5px 0 0 10px;
 }
 
 #contactInfo {
@@ -73,34 +74,47 @@ header.mainHeader{
 }
 
 .navBand {
-  background-color: $navColor;
-  width: 100%;
+	background-color: $navColor;
+	width: 100%;
 }
 
-.top-bar ul li:first-child a{
+.top-bar ul li:first-child a {
 	border-left: none;
 }
 
-// ============== SCROLLER AREA ==============
+// ============== SLIDER AREA ==============
+
+/*
+#slider {
+	overflow: hidden;
+	img{
+		position: absolute;
+		left: 50%;
+		margin-left: -960px;
+		min-width: 1920px;
+		min-height: 400px;
+	}
+}
+*/
 
 // ============== MAIN AREA ==============
 
 #mainBand {
-  position: relative;
-  background-color: $secondaryColor;
-  width: 100%;
-//  padding: 20px 0;
-  //min-height: 3000px;
+	position: relative;
+	background-color: $secondaryColor;
+	width: 100%;
+	//padding: 20px 0;
+	//min-height: 3000px;
 }
 
 #ourDifference {
-  //background: rgba(255, 255, 255, 0.05);
-  background: $bubbleColor;
+	//background: $bubbleColor;
+	background-image: url("../img/left-cross-5px.png");
 	text-align: justify;
-  padding: 30px 0 25px 0;
-  margin-bottom: 20px;
+	padding: 30px 0 25px 0;
+	margin-bottom: 20px;
 	margin-top: 0;
-  strong {
+	strong {
 		background-color: $mainColor;
 		color: #ffffff;
 		position: absolute;
@@ -111,118 +125,119 @@ header.mainHeader{
 		font-size: 12px;
 		text-transform: uppercase;
 		z-index: 1000;
-  }
-  p {
+	}
+	p {
 		margin-bottom: 10px;
-//		color: #ffffff;
-  }
+		//color: #ffffff;
+	}
 }
 
 .icon {
-  width: auto;
-  height: 18px;
-  //margin-right: 5px;
-  margin: -3px 10px 0 0;
+	width: auto;
+	height: 18px;
+	//margin-right: 5px;
+	margin: -3px 10px 0 0;
 }
 
 hr.embossed {
-  border-width: 1px 0px;
-  border-color: $embossedBorder
+	border-width: 1px 0px;
+	border-color: $embossedBorder
 }
 
 // ============== WHATS NEW AREA ==============
 
 #whatsNew {
-  color: $textColor;
-  ul {
-	list-style: none;
-	li {
-	  //height: 15px;
+	color: $textColor;
+	ul {
+		list-style: none;
+		li {
+			//height: 15px;
+		}
 	}
-  }
 }
 
 // ============== TESTIMONIALS AREA ==============
 
 .bubble {
-  position: relative;
-  padding: 10px;
-  background: $mainColor;
+	position: relative;
+	padding: 10px;
+	background: $mainColor;
 	color: #ffffff;
 }
 
 .bubble:after {
-  content: '';
-  position: absolute;
-  border-style: solid;
-  border-width: 15px 10px 0;
-  border-color: $mainColor transparent;
-  display: block;
-  width: 0;
-  z-index: 1;
-  bottom: -15px;
-  left: 23px;
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 15px 10px 0;
+	border-color: $mainColor transparent;
+	display: block;
+	width: 0;
+	z-index: 1;
+	bottom: -15px;
+	left: 23px;
 }
 
 .testimonial-name {
-//  color: white;
-  line-height: 1em;
+	//color: white;
+	line-height: 1em;
 }
 
 .testimonial-company {
-  font-size: .75em;
-//  color: white;
+	font-size: .75em;
+	//color: white;
 }
 
 // ============== PORTFOLIO ==============
-.portMenuBand{
-  width: 100%;
-  //background-color: lightgray;
-}
-.portfolioBand {
-  width: 100%;
-  padding: 0 20px;
+.portMenuBand {
+	width: 100%;
+	//background-color: lightgray;
 }
 
-.portfolioItem{
-  text-align: center;
-  img{
-	border: 1px solid #DDDDDD;
-  }
-  p {
-	font-weight: bold;
-	font-size: 14px;
-	color: #363636;
-  }
+.portfolioBand {
+	width: 100%;
+	padding: 0 20px;
+}
+
+.portfolioItem {
+	text-align: center;
+	img {
+		border: 1px solid #DDDDDD;
+	}
+	p {
+		font-weight: bold;
+		font-size: 14px;
+		color: #363636;
+	}
 }
 
 .portfolio-menu {
-  li {
-	display: inline;
-	border-left: 1px solid #DDDDDD;
-	padding: 0 15px;
-  }
-  li:first-child {
-	border-left: none;
-	//padding-left: 0;
-  }
-  a {
-	//color: red;
-  }
+	li {
+		display: inline;
+		border-left: 1px solid #DDDDDD;
+		padding: 0 15px;
+	}
+	li:first-child {
+		border-left: none;
+		//padding-left: 0;
+	}
+	a {
+		//color: red;
+	}
 }
 
 // ============== FOOTER AREA ==============
 
 .footerBand {
-  background-color: lightgray;
-  padding: 20px 0;
-  width: 100%;
+	background-color: lightgray;
+	padding: 20px 0;
+	width: 100%;
 }
 
 // ============== ASIDE AREA ==============
 
 aside {
-  background-color: $secondaryColor;
+	background-color: $secondaryColor;
 }
 
 // ============== MEDIA QUERIES ==============
@@ -230,47 +245,14 @@ aside {
 /* Large screens */
 @media only screen and (min-width: 940px) {
 
-  .mobilesOnly {
-	display: none;
-  }
-  .desktopOnly {
-	display: inline-block;
-  }
-
-  #cloudBackground {
-	background-position: 100% 20px;
-  }
-
 }
 
 /* Medium screens */
 @media only screen and (max-width: 939px) and (min-width: 768px) {
 
-  .mobilesOnly {
-	display: none;
-  }
-  .desktopOnly {
-	display: inline-block;
-  }
-
-  #cloudBackground {
-	background-position: 100% 20px;
-  }
-
 }
 
 /* Small screens */
 @media only screen and (max-width: 767px) {
-
-  .mobilesOnly {
-	display: inline-block;
-  }
-  .desktopOnly {
-	display: none;
-  }
-
-  #cloudBackground {
-	background-position: 100% 20px;
-  }
 
 }
