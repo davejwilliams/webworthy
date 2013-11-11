@@ -22,6 +22,8 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
+	<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+
 	<!-- Set the viewport width to device width for mobile -->
 	<meta name="viewport" content="width=device-width" />
 
@@ -38,7 +40,7 @@
 <header class="mainHeader">
 	<div class="row">
 		<div class="large-6 columns">
-			<img id="logo" src="<?php bloginfo( 'template_directory' ); ?>/img/wwd-logo.jpg">
+			<a href=" <?php echo home_url(); ?> "><img id="logo" src="<?php bloginfo( 'template_directory' ); ?>/img/wwd-logo.jpg"></a>
 		</div>
 		<div class="large-6 columns">
 			<div id="contactInfo">

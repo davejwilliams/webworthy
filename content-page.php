@@ -13,12 +13,12 @@
 <article id="page-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<div>
-		<h2><?php the_title(); ?></h2>
+		<h4><?php the_title(); ?></h4>
 	</div>
 
-	<?php if ( has_post_thumbnail()) : ?>
-		<a href="<?php the_permalink(); ?>" class="th" title="<?php the_title_attribute(); ?>" ><?php the_post_thumbnail(); ?></a>
-	<?php endif; ?>
+<!--	--><?php //if ( has_post_thumbnail()) : ?>
+<!--		<a href="--><?php //the_permalink(); ?><!--" class="th" title="--><?php //the_title_attribute(); ?><!--" >--><?php //the_post_thumbnail(); ?><!--</a>-->
+<!--	--><?php //endif; ?>
 	
 	<?php the_content(); ?>
 

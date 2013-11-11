@@ -1157,13 +1157,13 @@ div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, t
 }
 
 a {
-	color: #2ba6cb;
+	color: #b52725;
 	text-decoration: none;
 	line-height: inherit
 }
 
 a:hover, a:focus {
-	color: #2795b6
+	color: #ff3734;
 }
 
 a img {
@@ -1189,7 +1189,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	font-weight: bold;
 	font-style: normal;
-	color: #222;
+	/*color: #222;*/
 	text-rendering: optimizeLegibility;
 	margin-top: 0.2em;
 	margin-bottom: 0.5em;
@@ -1259,7 +1259,7 @@ ul, ol, dl {
 	font-size: 1em;
 	line-height: 1.6;
 	margin-bottom: 1.25em;
-	list-style-position: outside;
+	list-style-position: inside;
 	font-family: inherit
 }
 

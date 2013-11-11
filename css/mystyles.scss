@@ -2,6 +2,7 @@
 
 $mainColor: #B52725;
 $secondaryColor: #FFFFFF;
+$tertiaryColor: rgba(0, 0, 0, 0.055);
 $navColor: #111111;
 $textColor: gray;
 
@@ -33,9 +34,9 @@ body {
 	font-size: 14px;
 }
 
-p {
+p, li {
 	color: $textColor;
-	font-size: 14px;
+//	font-size: 14px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -97,6 +98,58 @@ header.mainHeader {
 }
 */
 
+// -- Unslider --
+.banner {
+	position: relative;
+	overflow: auto;
+}
+
+.banner ul li {
+	list-style: none;
+	float: left;
+//	min-height: 400px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+//	background-size: cover;
+	h2{
+		text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+		color: #ffffff;
+		font-family: 'Noto Sans', sans-serif;
+//		line-height:105%;
+		margin:20px 30px;
+		display: inline-block;
+	}
+}
+
+.dots {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+}
+
+.dots li {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 0 4px;
+	text-indent: -999em;
+	border: 2px solid #fff;
+	border-radius: 6px;
+	cursor: pointer;
+	opacity: .4;
+	transition: background .5s, opacity .5s;
+	box-shadow: 0px 0px 5px rgba(181, 39, 37, 1);
+}
+
+.dots li.active {
+	background: #fff;
+	opacity: 1;
+}
+// -- END Unslider --
+
 // ============== MAIN AREA ==============
 
 #mainBand {
@@ -108,8 +161,8 @@ header.mainHeader {
 }
 
 #ourDifference {
-	//background: $bubbleColor;
-	background-image: url("../img/left-cross-5px.png");
+	background-color: $tertiaryColor;
+//	background-image: url("../img/left-cross-5px.png");
 	text-align: justify;
 	padding: 30px 0 25px 0;
 	margin-bottom: 20px;
@@ -119,11 +172,12 @@ header.mainHeader {
 		color: #ffffff;
 		position: absolute;
 		left: 50%;
-		margin-left: -100px;
+		margin-left: -120px;
 		margin-top: -47px;
 		padding: 5px 50px;
 		font-size: 12px;
 		text-transform: uppercase;
+		letter-spacing: 2px;
 		z-index: 1000;
 	}
 	p {
@@ -250,9 +304,17 @@ aside {
 /* Medium screens */
 @media only screen and (max-width: 939px) and (min-width: 768px) {
 
+	.banner ul li {
+		min-height: 400px;
+	}
+
 }
 
 /* Small screens */
 @media only screen and (max-width: 767px) {
+
+	.banner ul li {
+		min-height: 200px;
+	}
 
 }

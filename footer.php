@@ -16,13 +16,27 @@
 
 		<?php if (dynamic_sidebar('Sidebar Footer One') || dynamic_sidebar('Sidebar Footer Two') || dynamic_sidebar('Sidebar Footer Three') || dynamic_sidebar('Sidebar Footer Four')) : else : ?>
 
+
+			<?php $args = array(
+				'depth'        => 1,
+				'title_li'     => __(''),
+			); ?>
+
+
 			<div class="large-12 columns">
 				<ul class="inline-list">
-					<?php wp_list_pages('title_li='); ?>
+					<?php wp_list_pages($args); ?>
 				</ul>
 			</div>
 
 		<?php endif; ?>
+
+
+
+<!--		<div class="large-4 columns">-->
+<!--			--><?php //wp_nav_menu(array('theme_location' => 'main-menu', 'depth' => '1')); ?>
+<!--		</div>-->
+
 
 	</footer>
 </div>
