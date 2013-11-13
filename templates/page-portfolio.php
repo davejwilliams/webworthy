@@ -6,14 +6,15 @@
 
 get_header(); ?>
 
-	<div class="portMenuBand">
+	<div class="portMenuBand" style="margin-top: 10px;">
 			<!-- CREATE PORTFOLIO MENU BASED ON CATEGORIES -->
 			<?php wp_nav_menu(array('theme_location' => 'portfolio-menu', 'container' => 'nav', 'container_class' => 'portfolio-menu')); ?>
 	</div>
 
 
 	<!-- DISPLAY PORTFOLIO PIECES -->
-	<div class="portfolioBand">
+	<div class="portfolioBand" style="margin-bottom: 10px;">
+
 		<ul class="small-block-grid-1 large-block-grid-4">
 			<?php
 			// Setup for the loop

@@ -15,7 +15,7 @@
   clear: both; }
 
 body {
-  font-size: 14px; }
+  font-family: 'Lato', sans-serif; }
 
 p, li {
   color: gray; }
@@ -29,9 +29,23 @@ h1, h2, h3, h4, h5, h6 {
 .spacer {
   height: 20px; }
 
+h4 {
+  margin-top: 20px; }
+
 h6 a {
   font-weight: 500;
   color: #B52725; }
+
+.big-shadow {
+  background: rgba(0, 0, 0, 0.085) url("../img/big_shadow.png") no-repeat center top; }
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #dddddd;
+  margin: -20px auto 15px auto; }
 
 header.mainHeader {
   background-color: #b52725;
@@ -109,7 +123,7 @@ header.mainHeader {
   width: 100%; }
 
 #ourDifference {
-  background-color: rgba(0, 0, 0, 0.055);
+  background: rgba(0, 0, 0, 0.085) url("../img/shadow.png") no-repeat center top;
   text-align: justify;
   padding: 30px 0 25px 0;
   margin-bottom: 20px;
@@ -191,12 +205,20 @@ hr.embossed {
   border-left: none; }
 
 .footerBand {
-  background-color: lightgray;
+  background-color: rgba(0, 0, 0, 0.085);
   padding: 20px 0;
   width: 100%; }
 
+footer {
+  padding-top: 10px;
+  min-height: 150px; }
+
 aside {
   background-color: white; }
+
+.sidebar h5 {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #DDDDDD; }
 
 /* Large screens */
 /* Medium screens */

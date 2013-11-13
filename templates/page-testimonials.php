@@ -7,7 +7,7 @@
 get_header(); ?>
 
 
-<div class="row">
+<div class="row" style="margin-bottom: 10px;">
 
 	<br><br>
 

@@ -1,15 +1,13 @@
 <?php
 
 /*
- * Template Name: Page-Sidebar-Left
+ * Template Name: Page-Sidebar-Right
  */
 
 get_header(); ?>
 
 <!-- Begin Page -->
-	<div class="row" style="margin-top: 10px; margin-bottom: 10px;">
-
-<?php get_sidebar(); ?>
+<div class="row" style="margin-top: 10px; margin-bottom: 10px;">
 
     <!-- Main Content -->
     <div class="large-9 columns" role="content">
@@ -24,6 +22,8 @@ get_header(); ?>
 
     </div>
     <!-- End Main Content -->
+
+	<?php get_sidebar(); ?>
 
 </div>
 <!-- End Page -->

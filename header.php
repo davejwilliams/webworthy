@@ -22,14 +22,16 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
-	<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+<!--	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>-->
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
 	<!-- Set the viewport width to device width for mobile -->
 	<meta name="viewport" content="width=device-width" />
 
 	<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/mystyles.css">
 
-	<title><?php wp_title(); ?></title>
+<!--	<title>--><?php //wp_title(); ?><!--</title>-->
+	<title><?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
 
 	<?php wp_head(); ?>
 

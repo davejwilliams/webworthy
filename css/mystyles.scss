@@ -2,7 +2,8 @@
 
 $mainColor: #B52725;
 $secondaryColor: #FFFFFF;
-$tertiaryColor: rgba(0, 0, 0, 0.055);
+$tertiaryColor: rgba(0, 0, 0, 0.085);
+//$tertiaryColor: rgba(0, 0, 0, 0.8);
 $navColor: #111111;
 $textColor: gray;
 
@@ -31,7 +32,8 @@ $embossedBorder: rgba(0, 0, 0, 0.55) transparent rgba(255, 255, 255, 0.07) trans
 }
 
 body {
-	font-size: 14px;
+//	font-family: 'Open Sans', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 
 p, li {
@@ -51,9 +53,27 @@ h1, h2, h3, h4, h5, h6 {
 	height: 20px;
 }
 
+h4 {
+	margin-top: 20px;
+}
+
 h6 a {
 	font-weight: 500;
 	color: #B52725;
+}
+
+.big-shadow {
+	background: $tertiaryColor url("../img/big_shadow.png") no-repeat center top;
+}
+
+.arrow-down {
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+
+	border-top: 15px solid #dddddd;
+	margin: -20px auto 15px auto;
 }
 
 // ============== HEADER AREA ==============
@@ -77,6 +97,9 @@ header.mainHeader {
 .navBand {
 	background-color: $navColor;
 	width: 100%;
+//	border-top: 1px solid #262626;
+//	outline: #7f1b1a solid 1px;
+//	box-shadow: 0px -6px 12px rgba(0, 0, 0, 1.0);
 }
 
 .top-bar ul li:first-child a {
@@ -161,8 +184,9 @@ header.mainHeader {
 }
 
 #ourDifference {
-	background-color: $tertiaryColor;
+//	background-color: $tertiaryColor;
 //	background-image: url("../img/left-cross-5px.png");
+	background: $tertiaryColor url("../img/shadow.png") no-repeat center top;
 	text-align: justify;
 	padding: 30px 0 25px 0;
 	margin-bottom: 20px;
@@ -283,9 +307,14 @@ hr.embossed {
 // ============== FOOTER AREA ==============
 
 .footerBand {
-	background-color: lightgray;
+	background-color: $tertiaryColor;
 	padding: 20px 0;
 	width: 100%;
+}
+
+footer{
+	padding-top: 10px;
+	min-height: 150px;
 }
 
 // ============== ASIDE AREA ==============
@@ -293,6 +322,24 @@ hr.embossed {
 aside {
 	background-color: $secondaryColor;
 }
+
+// ============== ASIDE AREA ==============
+
+.sidebar {
+//	border-left: 1px solid #dddddd;
+//	border-bottom: 1px solid #dddddd;
+//	box-shadow: -4px 4px 3px rgba(0, 0, 0, .15);
+//	background: url("../img/sidebar_right_inner.png") repeat-y left;
+//	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.15);
+//	margin-top: -10px;
+//	min-height: 1000px;
+	h5{
+		padding-bottom: 5px;
+		border-bottom: 1px solid #DDDDDD;
+	}
+}
+
+
 
 // ============== MEDIA QUERIES ==============
 

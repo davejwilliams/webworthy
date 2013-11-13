@@ -11,7 +11,7 @@
 ?>
 
 <!-- Footer -->
-<div class="footerBand">
+<div class="footerBand big-shadow">
 	<footer class="row">
 
 		<?php if (dynamic_sidebar('Sidebar Footer One') || dynamic_sidebar('Sidebar Footer Two') || dynamic_sidebar('Sidebar Footer Three') || dynamic_sidebar('Sidebar Footer Four')) : else : ?>

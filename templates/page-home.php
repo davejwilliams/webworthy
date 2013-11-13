@@ -70,7 +70,6 @@ get_header(); ?>
 		<?php
 		$args = array(
 			'orderby'   => 'post__in',
-//			'order'     => 'asc',
 			'post_type' => 'page',
 			'post__in'  => array(
 				71, //Web Design

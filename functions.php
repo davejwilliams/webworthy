@@ -84,7 +84,7 @@ function foundation_assets() {
 		wp_enqueue_style( 'app', get_stylesheet_uri(), array('foundation') );
 
 		// Load Google Fonts API
-		wp_enqueue_style( 'google-fonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400,300' );
+//		wp_enqueue_style( 'google-fonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400,300' );
 	
 	}
 
@@ -429,6 +429,7 @@ endif;
  * @see http://codex.wordpress.org/Plugin_API/Filter_Reference/wp_title
  */
 
+/*
 function foundation_title( $title, $sep ) {
 	global $paged, $page;
 
@@ -436,7 +437,7 @@ function foundation_title( $title, $sep ) {
 		return $title;
 
 	// Add the site name.
-	$title .= get_bloginfo( 'name' );
+	$title .=  get_bloginfo( 'name' );
 
 	// Add the site description for the home/front page.
 	$site_description = get_bloginfo( 'description', 'display' );
@@ -451,6 +452,7 @@ function foundation_title( $title, $sep ) {
 }
 
 add_filter( 'wp_title', 'foundation_title', 10, 2 );
+*/
 
 /**
  * Retrieve Shortcodes
