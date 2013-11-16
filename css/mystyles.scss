@@ -5,7 +5,8 @@ $secondaryColor: #FFFFFF;
 $tertiaryColor: rgba(0, 0, 0, 0.085);
 //$tertiaryColor: rgba(0, 0, 0, 0.8);
 $navColor: #111111;
-$textColor: gray;
+$textColor: #808080;
+$headerColor: #555555;
 
 //$bubbleColor: rgba(15, 67, 91, 0.3);
 //$bubbleColor: #F6F6F6;
@@ -51,6 +52,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .spacer {
 	height: 20px;
+}
+
+h3 {
+	font-family: 'Questrial', sans-serif;
+	text-align: center;
+	color: $headerColor;
+	font-size: 37px;
 }
 
 h4 {
