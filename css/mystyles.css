@@ -53,6 +53,13 @@ h6 a {
   border-top: 15px solid #dddddd;
   margin: -20px auto 15px auto; }
 
+.paper-hr {
+  width: 473px;
+  height: 35px;
+  background: url("../img/horizontal-rule.png");
+  border: 1px solid blue;
+  margin: 10px auto; }
+
 header.mainHeader {
   background-color: #b52725;
   width: 100%;
@@ -209,6 +216,9 @@ hr.embossed {
   padding: 0 15px; }
 .portfolio-menu li:first-child {
   border-left: none; }
+
+.required {
+  color: red; }
 
 .footerBand {
   background-color: rgba(0, 0, 0, 0.085);

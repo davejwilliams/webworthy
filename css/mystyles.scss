@@ -84,6 +84,13 @@ h6 a {
 	margin: -20px auto 15px auto;
 }
 
+.paper-hr {
+	width: 473px;
+	height: 35px;
+	background: url("../img/horizontal-rule.png");
+	border: 1px solid blue;
+	margin: 10px auto;
+}
 // ============== HEADER AREA ==============
 
 header.mainHeader {
@@ -194,6 +201,7 @@ header.mainHeader {
 #ourDifference {
 //	background-color: $tertiaryColor;
 //	background-image: url("../img/left-cross-5px.png");
+//	background: url("../img/bg-texture.png");
 	background: $tertiaryColor url("../img/shadow.png") no-repeat center top;
 	text-align: justify;
 	padding: 30px 0 25px 0;
@@ -310,6 +318,12 @@ hr.embossed {
 	a {
 		//color: red;
 	}
+}
+
+// ============== CONTACT FORM ==============
+
+.required {
+	color: red;
 }
 
 // ============== FOOTER AREA ==============

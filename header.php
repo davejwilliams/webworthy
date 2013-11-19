@@ -47,7 +47,7 @@
 		</div>
 		<div class="large-6 columns">
 			<div id="contactInfo">
-				555-555-1234<br>
+				(732) 784-3141<br>
 				dave@webworthydesign.com
 			</div>
 		</div>
