@@ -6,7 +6,7 @@
 
 get_header(); ?>
 
-	<div class="portMenuBand" style="margin-top: 10px;">
+	<div class="portMenuBand">
 			<!-- CREATE PORTFOLIO MENU BASED ON CATEGORIES -->
 			<?php wp_nav_menu(array('theme_location' => 'portfolio-menu', 'container' => 'nav', 'container_class' => 'portfolio-menu')); ?>
 	</div>
@@ -37,9 +37,9 @@ get_header(); ?>
 					<?php $portfolio_loop->the_post(); ?>
 
 					<li class="portfolioItem">
-						<a href="<?php the_permalink(); ?>">
+						<a href="<?php the_permalink(); ?>" style='text-decoration:none;'>
 							<?php if (has_post_thumbnail()): ?>
-								<?php the_post_thumbnail('thumbnail'); ?>
+								<?php the_post_thumbnail('thumbnail', array('class' => 'th')); ?>
 							<?php endif; ?>
 
 							<p><?php echo the_title(); ?></p>

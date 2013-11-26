@@ -17,6 +17,8 @@
 <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 
 <head>
+	<meta name="google-site-verification" content="aGMsPJ1F_rSMHkfMGAy7-t7jwCtHIzqRgSMXxjz_0mQ" />
+
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
@@ -29,9 +31,10 @@
 	<!-- Set the viewport width to device width for mobile -->
 	<meta name="viewport" content="width=device-width" />
 
+<!--	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>-->
+
 	<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/mystyles.css">
 
-<!--	<title>--><?php //wp_title(); ?><!--</title>-->
 	<title><?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
 
 	<?php wp_head(); ?>
@@ -42,14 +45,16 @@
 
 <header class="mainHeader">
 	<div class="row">
-		<div class="large-6 columns">
-			<a href=" <?php echo home_url(); ?> "><img id="logo" src="<?php bloginfo( 'template_directory' ); ?>/img/wwd-logo.jpg"></a>
+		<div class="large-6 medium-6 small-12 columns logo-side">
+			<a href=" <?php echo home_url(); ?> "><img id="logo" src="<?php bloginfo( 'template_directory' ); ?>/img/wwd-logo.jpg" alt="<?php bloginfo('name'); ?>"></a>
+			<p><em><span style="font-size: 14px; color: #ffffff; padding-left: 23px;"><?php bloginfo('description'); ?></span></em></p>
 		</div>
-		<div class="large-6 columns">
+		<div class="large-6 medium-6 small-12 columns contact-side">
 			<div id="contactInfo">
-				(732) 784-3141<br>
-				dave@webworthydesign.com
+				<a class="phone-link" href="tel:732-784-3141">(732) 784-3141 <img class="icons-phone" src="<?php bloginfo( 'template_directory' ); ?>/img/icons-phone.png" alt="732-784-3141 Phone Icon"></a><br>
+				<a class="email-link" href="mailto:info@webworthydesign.com">info@webworthydesign.com <img class="icons-email" src="<?php bloginfo( 'template_directory' ); ?>/img/icons-email.png" alt="email-icon"></a>
 			</div>
+			<a class="quote-bubble" href="<?php echo site_url(); ?>/contact/"><img class="icons-email" src="<?php bloginfo( 'template_directory' ); ?>/img/quote-bubble.png" alt="Click Here For A Free Quote"></a>
 		</div>
 	</div>
 </header>

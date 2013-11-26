@@ -7,53 +7,11 @@ get_header(); ?>
 
 <?php the_post(); ?>
 
-	<!--------------- NIVOSLIDER ---------------------->
-	<!-- GET SLIDER FILES: Usually in the <head> section -->
-	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/nivo-slider/nivo-slider.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/nivo-slider/themes/default/default.css" type="text/css" />
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
-	<script src="<?php bloginfo( 'template_url' ); ?>/nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
-
-	<!-- NivoSlider -->
-<?php if ( get_field( 'slider' ) ): ?>
-	<div class="slider-wrapper theme-default">
-		<div class="ribbon"></div>
-		<div id="slider" class="nivoSlider">
-			<?php while ( has_sub_field( 'slider' ) ): ?>
-				<img src="<?php the_sub_field( 'image' ); ?>" alt="<?php the_sub_field( 'image_alt' ); ?>">
-			<?php endwhile; ?>
-		</div>
-	</div>
-<?php endif; ?>
+	<!-- REVOLUTION SLIDER -->
+<?php putRevSlider( "homeslider" ) ?>
 
 
-	<!--------------- UNSLIDER ---------------------->
-	<!-- GET SLIDER FILES: Usually in the <head> section -->
-	<!--<script src="//code.jquery.com/jquery-latest.min.js"></script>-->
-	<!--<script src="//unslider.com/unslider.min.js"></script>-->
-
-	<!-- Unslider -->
-<?php //if ( get_field( 'slider' ) ): ?>
-	<!--<div class="banner">-->
-	<!--	<ul style="width: 100%;">-->
-	<!--		--><?php //while ( has_sub_field( 'slider' ) ): ?>
-	<!--			<li style='width: 100%; background-image: url("--><?php //the_sub_field( 'image' ); ?><!--");'>-->
-	<!--				<div class="row">-->
-	<!--					<div class="large-6 medium-6 small-12 columns">-->
-	<!--						<h2>--><?php //the_sub_field('slide_text') ?><!--</h2>-->
-	<!--					</div>-->
-	<!--				</div>-->
-	<!--			</li>-->
-	<!--		--><?php //endwhile; ?>
-	<!--	</ul>-->
-	<!--</div>-->
-<?php //endif; ?>
-
-
-	<!------------ MAIN CONTENT ------------>
-
-
-
+	<!-- MAIN CONTENT -->
 	<div id="ourDifference">
 		<div class="row">
 			<div class="large-12 columns">
@@ -64,42 +22,45 @@ get_header(); ?>
 	</div>
 
 
-	<!------------ SERVICES BOXES ------------>
-	<div class="row">
+	<!-- SERVICES -->
+	<div class="services-bg">
+		<div class="row">
 
-		<?php
-		$args = array(
-			'orderby'   => 'post__in',
-			'post_type' => 'page',
-			'post__in'  => array(
-				71, //Web Design
-				83, //Graphic Design
-				73, //Branding & Identity
-				79, //Photo Retouching & Restoration
-				77, //Audio/Video
-				81, //SEO & Social Media
-			),
-		);
-		$page_query = new WP_Query( $args ); ?>
+			<?php
+			$args = array(
+				'orderby'   => 'post__in',
+				'post_type' => 'page',
+				'post__in'  => array(
+					71, //Web Design
+					83, //Graphic Design
+					73, //Branding & Identity
+					79, //Photo Retouching & Restoration
+					77, //Audio/Video
+					81, //SEO & Social Media
+				),
+			);
+			$page_query = new WP_Query( $args ); ?>
 
-		<?php while ( $page_query->have_posts() ) : $page_query->the_post(); ?>
-			<div class="large-4 columns">
-				<h6>
-					<a href="<?php the_permalink(); ?>">
-						<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-							the_post_thumbnail( 'thumbnail', array( 'class' => 'icon' ) );
-						} ?>
-						<?php the_title(); ?></a>
-				</h6>
+			<?php while ( $page_query->have_posts() ) : $page_query->the_post(); ?>
+				<div class="large-4 columns services-box">
+					<h6>
+						<a href="<?php the_permalink(); ?>">
+							<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+								the_post_thumbnail( 'thumbnail', array( 'class' => 'icon' ) );
+							} ?>
+							<?php the_title(); ?></a>
+					</h6>
 
-				<p><?php echo wp_trim_words( get_the_content(), 25 ); ?></p>
-			</div>
-		<?php endwhile; ?>
+					<p><?php echo wp_trim_words( get_the_content(), 25 ); ?></p>
+				</div>
+			<?php endwhile; ?>
 
+		</div>
 	</div>
-	<!------------ END MAIN BOXES ------------>
 
-	<div class="row">
+	<!-- END SERVICES -->
+
+	<div class="row" style="margin-bottom: 20px;">
 		<div class="large-12 small-12 columns">
 			<hr class="embossed">
 		</div>
@@ -107,7 +68,7 @@ get_header(); ?>
 
 
 	<div class="row">
-		<!------------ WHAT'S NEW ------------>
+		<!-- WHAT'S NEW -->
 		<?php
 		global $more;
 		$more = 0;
@@ -139,10 +100,10 @@ get_header(); ?>
 				<?php endif; ?>
 			</ul>
 		</div>
-		<!------------ END WHAT'S NEW ------------>
+		<!-- END WHAT'S NEW -->
 
 
-		<!------------ TESTIMONIALS ------------>
+		<!--TESTIMONIALS -->
 		<div class="large-6 small-12 columns">
 			<h6><a href="<?php echo site_url(); ?>/why-us/testimonials">Testimonials</a></h6>
 
@@ -164,49 +125,19 @@ get_header(); ?>
 	</div>
 
 
-	<!------------ LATEST WORK ------------>
+	<!--LATEST WORK -->
 	<div class="row">
 		<div class="large-12 columns">
 			<h6><a href="<?php echo site_url(); ?>/work">Latest Work</a></h6>
 			<ul class="large-block-grid-6 small-block-grid-2">
-				<li><img src="http://placehold.it/350x150"></li>
-				<li><img src="http://placehold.it/350x150"></li>
-				<li><img src="http://placehold.it/350x150"></li>
-				<li><img src="http://placehold.it/350x150"></li>
-				<li><img src="http://placehold.it/350x150"></li>
-				<li><img src="http://placehold.it/350x150"></li>
+				<li><img src="http://placehold.it/350x150" alt="placeholder"></li>
+				<li><img src="http://placehold.it/350x150" alt="placeholder"></li>
+				<li><img src="http://placehold.it/350x150" alt="placeholder"></li>
+				<li><img src="http://placehold.it/350x150" alt="placeholder"></li>
+				<li><img src="http://placehold.it/350x150" alt="placeholder"></li>
+				<li><img src="http://placehold.it/350x150" alt="placeholder"></li>
 			</ul>
 		</div>
 	</div>
-
-
-
-	<!----------------------------------------------------------------->
-
-	<!-- NIVOSLIDER -->
-	<script type="text/javascript">
-		(function ($) {
-			$(window).load(function () {
-				$('#slider').nivoSlider({
-					animSpeed   : 500,     // Slide transition speed
-					pauseTime   : 5000,    // How long each slide will show
-					directionNav: true, // Next & Prev navigation
-					controlNav  : false,  // 1,2,3... navigation
-					pauseOnHover: true  // Stop animation while hovering
-				});
-			});
-		})(jQuery);
-	</script>
-
-	<!-- UNSLIDER -->
-	<!--	<script>-->
-	<!--		$('.banner').unslider({-->
-	<!--			speed: 500,               //  The speed to animate each slide (in milliseconds)-->
-	<!--			delay: 5000,              //  The delay between slide animations (in milliseconds)-->
-	<!--			keys: true,               //  Enable keyboard (left, right) arrow shortcuts-->
-	<!--			dots: true,               //  Display dot navigation-->
-	<!--			fluid: true              //  Support responsive design. May break non-responsive designs-->
-	<!--		});-->
-	<!--	</script>-->
 
 <?php get_footer(); ?>

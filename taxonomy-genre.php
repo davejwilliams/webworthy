@@ -35,11 +35,11 @@
 
 				<?php endif; ?>
 
-			<?php //foundation_pagination(); ?>
+			<?php foundation_pagination(); ?>
 	</div>
 
 
-<?php get_sidebar(); ?>
+<?php //get_sidebar(); ?>
 <?php get_footer(); ?>
 
 

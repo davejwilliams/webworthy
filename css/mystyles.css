@@ -23,6 +23,14 @@ p, li {
 h1, h2, h3, h4, h5, h6 {
   color: #b52725; }
 
+a {
+  color: #b52725;
+  text-decoration: none; }
+
+a:hover {
+  color: #ff3734;
+  text-decoration: underline; }
+
 .topBand a, #navBand a {
   color: #FFFFFF; }
 
@@ -67,8 +75,24 @@ header.mainHeader {
 
 #contactInfo {
   text-align: right;
-  padding: 10px 0;
-  color: #ffffff; }
+  padding: 10px 0; }
+  #contactInfo a {
+    color: #ffffff;
+    display: inline-block;
+    margin-bottom: 5px; }
+  #contactInfo a:hover {
+    text-decoration: underline; }
+  #contactInfo img {
+    display: inline-block;
+    margin: 5px 0 -2px 5px; }
+
+.quote-bubble {
+  clear: both;
+  float: right;
+  display: inline-block;
+  margin: -8px 5px -30px 0;
+  width: 150px;
+  height: auto; }
 
 .navBand {
   background-color: #111111;
@@ -156,14 +180,23 @@ header.mainHeader {
   #ourDifference p {
     margin-bottom: 10px; }
 
+.services-bg {
+  clear: both;
+  display: table;
+  margin: -45px auto 0 auto;
+  padding: 45px 30px 0 30px;
+  background-image: url("../img/shadow-bg.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center top; }
+
+.services-box {
+  min-height: 195px; }
+
 .icon {
   width: auto;
   height: 18px;
   margin: -3px 10px 0 0; }
-
-hr.embossed {
-  border-width: 1px 0px;
-  border-color: rgba(0, 0, 0, 0.55) transparent rgba(255, 255, 255, 0.07) transparent; }
 
 #whatsNew {
   color: gray; }
@@ -195,16 +228,19 @@ hr.embossed {
   font-size: .75em; }
 
 .portMenuBand {
-  width: 100%; }
+  width: 100%;
+  margin-top: 10px; }
 
 .portfolioBand {
   width: 100%;
   padding: 0 20px; }
 
+#menu-portfolio-genres .current-menu-item {
+  text-decoration: underline;
+  color: #b52725; }
+
 .portfolioItem {
   text-align: center; }
-  .portfolioItem img {
-    border: 1px solid #DDDDDD; }
   .portfolioItem p {
     font-weight: bold;
     font-size: 14px;
@@ -217,8 +253,22 @@ hr.embossed {
 .portfolio-menu li:first-child {
   border-left: none; }
 
+.portfolio-piece {
+  border: 5px solid #ffffff;
+  outline: 1px solid rgba(0, 0, 0, 0.085);
+  display: block;
+  margin: 0 auto; }
+
 .required {
   color: red; }
+
+.interests {
+  background-color: #E9E9E9;
+  padding: 20px 0;
+  margin: 0 0 20px 0; }
+
+.captcha {
+  width: 70px; }
 
 .footerBand {
   background-color: rgba(0, 0, 0, 0.085);
@@ -228,6 +278,25 @@ hr.embossed {
 footer {
   padding-top: 10px;
   min-height: 150px; }
+
+#footerContactInfo {
+  text-align: right;
+  padding: 0 0 5px 0; }
+  #footerContactInfo a {
+    color: #b52725;
+    display: inline-block;
+    margin-bottom: 5px; }
+  #footerContactInfo a:hover {
+    text-decoration: underline;
+    color: #ff3734; }
+  #footerContactInfo img {
+    display: inline-block;
+    margin: 5px 0 -2px 5px; }
+
+hr.embossed {
+  border-width: 1px 0px;
+  border-color: rgba(0, 0, 0, 0.085) transparent rgba(255, 255, 255, 0.75) transparent;
+  margin: 5px 0; }
 
 aside {
   background-color: white; }
@@ -240,8 +309,29 @@ aside {
 /* Medium screens */
 @media only screen and (max-width: 939px) and (min-width: 768px) {
   .banner ul li {
-    min-height: 400px; } }
+    min-height: 400px; }
+
+  .services {
+    padding: 0 22px; }
+
+  .services-box {
+    min-height: 230px; } }
 /* Small screens */
 @media only screen and (max-width: 767px) {
   .banner ul li {
-    min-height: 200px; } }
+    min-height: 200px; }
+
+  .services {
+    padding: 0 14px; }
+
+  .services-box {
+    min-height: 20px; }
+
+  .hide-for-small-only {
+    display: none; }
+
+  .logo-side, .contact-side, #contactInfo {
+    text-align: center; }
+
+  .quote-bubble {
+    display: none; } }
