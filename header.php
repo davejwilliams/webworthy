@@ -46,15 +46,15 @@
 <header class="mainHeader">
 	<div class="row">
 		<div class="large-6 medium-6 small-12 columns logo-side">
-			<a href=" <?php echo home_url(); ?> "><img id="logo" src="<?php bloginfo( 'template_directory' ); ?>/img/wwd-logo.jpg" alt="<?php bloginfo('name'); ?>"></a>
-			<p><em><span style="font-size: 14px; color: #ffffff; padding-left: 23px;"><?php bloginfo('description'); ?></span></em></p>
+			<a href=" <?php echo home_url(); ?> "><img id="logo" src="<?php bloginfo( 'template_directory' ); ?>/img/webworthy-logo-50.png" alt="<?php bloginfo('name'); ?>"></a>
+			<p class="description"><?php bloginfo('description'); ?></p>
 		</div>
 		<div class="large-6 medium-6 small-12 columns contact-side">
 			<div id="contactInfo">
 				<a class="phone-link" href="tel:732-784-3141">(732) 784-3141 <img class="icons-phone" src="<?php bloginfo( 'template_directory' ); ?>/img/icons-phone.png" alt="732-784-3141 Phone Icon"></a><br>
 				<a class="email-link" href="mailto:info@webworthydesign.com">info@webworthydesign.com <img class="icons-email" src="<?php bloginfo( 'template_directory' ); ?>/img/icons-email.png" alt="email-icon"></a>
 			</div>
-			<a class="quote-bubble" href="<?php echo site_url(); ?>/contact/"><img class="icons-email" src="<?php bloginfo( 'template_directory' ); ?>/img/quote-bubble.png" alt="Click Here For A Free Quote"></a>
+			<a class="quote-bubble" href="<?php echo site_url(); ?>/contact/"><img class="icons-email" src="<?php bloginfo( 'template_directory' ); ?>/img/free-quote-bubble.png" alt="Click Here For A Free Quote"></a>
 		</div>
 	</div>
 </header>

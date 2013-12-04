@@ -11,9 +11,7 @@
 ?>
 <!-- THIS SHOWS THE CONTENT OF A SINGLE POST -->
 
-
 <h5><?php the_title(); ?></h5>
-
 
 <?php if ( has_post_thumbnail() ) : ?>
 	<?php the_post_thumbnail( 'full', array( 'class' => 'portfolio-piece' ) ); ?>
@@ -24,7 +22,8 @@ if ( get_field( 'url' ) ) {
 	echo "<a href='http://" . get_field('url') . "' target='_blank' class='button' style='text-decoration:none;'>Visit Page</a>";
 }
 ?>
-<br>
+<!--<br>-->
+<!--<a class="back-btn" href="javascript:history.go(-1)">&lt; &lt; Back</a>-->
 <br>
 <p><?php the_content(); ?></p>
 

@@ -104,13 +104,25 @@ h6 a {
 // ============== HEADER AREA ==============
 
 header.mainHeader {
-	background-color: $mainColor;
+//	background-color: $mainColor;
+//	background: $mainColor url("../img/100-90-10.png") repeat;
+	background: $mainColor url("../img/noise.png") repeat;
 	width: 100%;
 	padding: 10px 0;
 }
 
 #logo {
 	//margin: 5px 0 0 10px;
+}
+
+.description {
+	font-size: 14px;
+	font-style: italic;
+//	color: #E3D3D3;
+	color: #DDBAB9;
+//	color: #ffffff;
+	padding: 10px 0 0 23px;
+	margin: 0;
 }
 
 #contactInfo {
@@ -229,12 +241,13 @@ header.mainHeader {
 }
 
 #ourDifference {
-//	background-color: $tertiaryColor;
+	background-color: $tertiaryColor;
 //	background-image: url("../img/left-cross-5px.png");
 //	background: url("../img/bg-texture.png");
-	background: $tertiaryColor url("../img/shadow.png") no-repeat center top;
+//	background: $tertiaryColor url("../img/shadow.png") no-repeat center top;
 	text-align: justify;
-	padding: 30px 0 25px 0;
+//	padding: 30px 0 25px 0;
+	padding: 8px 0 25px 0;
 	margin-bottom: 20px;
 	margin-top: 0;
 	strong {
@@ -326,12 +339,21 @@ header.mainHeader {
 .portMenuBand {
 	width: 100%;
 	margin-top: 10px;
-	//background-color: lightgray;
+}
+
+.back-btn {
+	margin-left: 10px;
+	text-decoration: none;
 }
 
 .portfolioBand {
 	width: 100%;
 	padding: 0 20px;
+	margin-bottom: 10px;
+	h1, h2, h3, h4, h4, h6 {
+		text-align: center;
+		border-bottom: 3px solid $mainColor;
+	}
 }
 
 #menu-portfolio-genres{
@@ -343,9 +365,9 @@ header.mainHeader {
 
 .portfolioItem {
 	text-align: center;
-//	img {
-//		border: 1px solid #DDDDDD;
-//	}
+	a {
+		text-decoration: none;
+	}
 	p {
 		font-weight: bold;
 		font-size: 14px;

@@ -69,9 +69,16 @@ h6 a {
   margin: 10px auto; }
 
 header.mainHeader {
-  background-color: #b52725;
+  background: #b52725 url("../img/noise.png") repeat;
   width: 100%;
   padding: 10px 0; }
+
+.description {
+  font-size: 14px;
+  font-style: italic;
+  color: #DDBAB9;
+  padding: 10px 0 0 23px;
+  margin: 0; }
 
 #contactInfo {
   text-align: right;
@@ -160,9 +167,9 @@ header.mainHeader {
   width: 100%; }
 
 #ourDifference {
-  background: rgba(0, 0, 0, 0.085) url("../img/shadow.png") no-repeat center top;
+  background-color: rgba(0, 0, 0, 0.085);
   text-align: justify;
-  padding: 30px 0 25px 0;
+  padding: 8px 0 25px 0;
   margin-bottom: 20px;
   margin-top: 0; }
   #ourDifference strong {
@@ -231,9 +238,17 @@ header.mainHeader {
   width: 100%;
   margin-top: 10px; }
 
+.back-btn {
+  margin-left: 10px;
+  text-decoration: none; }
+
 .portfolioBand {
   width: 100%;
-  padding: 0 20px; }
+  padding: 0 20px;
+  margin-bottom: 10px; }
+  .portfolioBand h1, .portfolioBand h2, .portfolioBand h3, .portfolioBand h4, .portfolioBand h4, .portfolioBand h6 {
+    text-align: center;
+    border-bottom: 3px solid #b52725; }
 
 #menu-portfolio-genres .current-menu-item {
   text-decoration: underline;
@@ -241,6 +256,8 @@ header.mainHeader {
 
 .portfolioItem {
   text-align: center; }
+  .portfolioItem a {
+    text-decoration: none; }
   .portfolioItem p {
     font-weight: bold;
     font-size: 14px;

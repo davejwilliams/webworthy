@@ -10,6 +10,14 @@
  */
 
 get_header(); ?>
+
+<!--	<div class="portMenuBand">-->
+		<!-- CREATE PORTFOLIO MENU BASED ON CATEGORIES -->
+<!--		--><?php //wp_nav_menu( array( 'theme_location' => 'portfolio-menu', 'container' => 'nav', 'container_class' => 'portfolio-menu' ) ); ?>
+<!--	</div>-->
+
+<div class="portMenuBand"><a class="back-btn" href="javascript:history.go(-1)">&lt;&lt; Back</a></div>
+
 	<!-- Begin Page -->
 	<div class="row" style="margin-top: 10px; margin-bottom: 10px;">
 

@@ -15,7 +15,7 @@
 	<footer class="row">
 
 		<div class="large-7 columns">
-			<a href=" <?php echo home_url(); ?> "><img id="logo" src="<?php bloginfo( 'template_directory' ); ?>/img/footer-logo.png" alt="<?php bloginfo('name'); ?>"></a>
+			<a href=" <?php echo home_url(); ?> "><img id="logo" src="<?php bloginfo( 'template_directory' ); ?>/img/footerlogo.png" alt="<?php bloginfo('name'); ?>"></a>
 			<p><em><span style="font-size: 14px;"><?php bloginfo('description'); ?></span></em></p>
 		</div>
 

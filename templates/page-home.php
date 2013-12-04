@@ -8,7 +8,8 @@ get_header(); ?>
 <?php the_post(); ?>
 
 	<!-- REVOLUTION SLIDER -->
-<?php putRevSlider( "homeslider" ) ?>
+<?php //putRevSlider( "homeslider" ) ?>
+<?php putRevSlider( "homepage" ) ?>
 
 
 	<!-- MAIN CONTENT -->
