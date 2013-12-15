@@ -1161,7 +1161,7 @@ div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, t
 }
 
 a {
-	color: #b52725;
+	/*color: #b52725;*/
 	text-decoration: none;
 	line-height: inherit
 }
@@ -2839,7 +2839,9 @@ form.custom .custom.disabled {
 	height: 45px;
 	line-height: 45px;
 	position: relative;
-	background: #111;
+	/*background: #111;*/
+	background: #555;
+	/*background: #B52725 url("../img/noise.png") repeat;*/
 	/*margin-bottom: 1.875em*/
 	margin: 0;
 }
@@ -2941,7 +2943,9 @@ form.custom .custom.disabled {
 }
 
 .top-bar.expanded .title-area {
-	background: #111
+	/*background: #111*/
+	background: #555;
+	/*background: #B52725 url("../img/noise.png") repeat;*/
 }
 
 .top-bar.expanded .toggle-topbar a {
@@ -2966,7 +2970,7 @@ form.custom .custom.disabled {
 	width: 100%;
 	height: auto;
 	display: block;
-	background: #333;
+	background: #555;
 	font-size: 16px;
 	margin: 0
 }
@@ -3109,7 +3113,9 @@ form.custom .custom.disabled {
 
 @media only screen and (min-width: 58.75em) {
 	.top-bar {
-		background: #111;
+		/*background: #111;*/
+		background: #555;
+		/*background: #B52725 url("../img/noise.png") repeat;*/
 		*zoom: 1;
 		overflow: visible
 	}
@@ -3145,7 +3151,9 @@ form.custom .custom.disabled {
 	}
 
 	.top-bar.expanded {
-		background: #111
+		/*background: #111*/
+		background: #555;
+		/*background: #B52725 url("../img/noise.png") repeat;*/
 	}
 
 	.contain-to-grid .top-bar {
@@ -3177,7 +3185,9 @@ form.custom .custom.disabled {
 	.top-bar-section li a:not(.button) {
 		padding: 0 15px;
 		line-height: 45px;
-		background: #111
+		/*background: #111*/
+		background: #555;
+		/*background: #B52725 url("../img/noise.png") repeat;*/
 	}
 
 	.top-bar-section li a:not(.button):hover {
@@ -3253,7 +3263,9 @@ form.custom .custom.disabled {
 	}
 
 	.top-bar-section .has-form {
-		background: #111;
+		/*background: #111;*/
+		background: #555;
+		/*background: #B52725 url("../img/noise.png") repeat;*/
 		padding: 0 15px;
 		height: 45px
 	}

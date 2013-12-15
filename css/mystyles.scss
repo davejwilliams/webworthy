@@ -1,11 +1,12 @@
 // Type 'compass watch' in the console, while in the site directory, to start the SCSS program.
 
-$mainColor: #B52725;
+//$mainColor: #B52725;
+$mainColor: #2685b5;
 $linkHover: #ff3734;
 $secondaryColor: #FFFFFF;
 $tertiaryColor: rgba(0, 0, 0, 0.085);
 //$tertiaryColor: rgba(0, 0, 0, 0.8);
-$navColor: #111111;
+$navColor: #555;
 $textColor: #808080;
 $headerColor: #555555;
 
@@ -77,7 +78,7 @@ h4 {
 
 h6 a {
 	font-weight: 500;
-	color: #B52725;
+	color: $mainColor;
 }
 
 .big-shadow {
@@ -106,28 +107,31 @@ h6 a {
 header.mainHeader {
 //	background-color: $mainColor;
 //	background: $mainColor url("../img/100-90-10.png") repeat;
-	background: $mainColor url("../img/noise.png") repeat;
+	background: $mainColor url("../img/noise66.png") repeat;
 	width: 100%;
 	padding: 10px 0;
 }
 
 #logo {
 	//margin: 5px 0 0 10px;
+	width: 175px;
+	height: auto;
 }
 
 .description {
 	font-size: 14px;
 	font-style: italic;
 //	color: #E3D3D3;
-	color: #DDBAB9;
+//	color: #DDBAB9;
 //	color: #ffffff;
-	padding: 10px 0 0 23px;
+	color: #ecf8ff;
+	padding: 10px 0 0 0;
 	margin: 0;
 }
 
 #contactInfo {
 	text-align: right;
-	padding: 10px 0;
+	padding: 65px 0 0 0;
 	a{
 		color: #ffffff;
 		display: inline-block;
@@ -153,14 +157,74 @@ header.mainHeader {
 
 .navBand {
 	background-color: $navColor;
+//	background: #B52725 url("../img/noise66.png") repeat;
 	width: 100%;
 //	border-top: 1px solid #262626;
 //	outline: #7f1b1a solid 1px;
 //	box-shadow: 0px -6px 12px rgba(0, 0, 0, 1.0);
 }
 
+// ============== Nav Menu Hack ==============
+$menuColor: rgba(0, 0, 0, 0.1) !important;
+
+.top-bar, .top-bar-section ul, .top-bar-section li a:not(.button), .top-bar.expanded .title-area {
+	background-color: transparent !important;
+	text-transform: uppercase;
+	text-decoration: none !important;
+}
+
+.top-bar.expanded {
+	margin-bottom: 50px;
+//	background-color: blue !important;
+}
+
+.top-bar.expanded ul {
+	background-color: $menuColor;
+}
+
 .top-bar ul li:first-child a {
 	border-left: none;
+}
+
+.top-bar ul li a, .top-bar ul li {
+	border-left: none !important;
+	border-right: none !important;
+}
+
+#menu-main-menu .current_page_item, #menu-main-menu li:hover {
+	border-radius: 5px;
+	background-color: $menuColor;
+}
+
+#menu-main-menu .has-dropdown:hover {
+	border-radius: 5px 5px 0 0;
+	background-color: $menuColor;
+}
+
+.dropdown {
+//	background: $mainColor url("../img/noise66.png") repeat !important;
+//	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.top-bar-section .dropdown li:hover {
+	border-radius: 0 !important;
+}
+
+.top-bar-section .dropdown li a {
+//	background-color: red !important;
+//	background-color: $menuColor;
+	background: darken($mainColor, 5%) url("../img/noise66.png") repeat !important;
+	text-decoration: none;
+}
+
+.top-bar-section .dropdown li a:hover {
+//	background-color: orange !important;
+//	background-color: $menuColor;
+	background: darken($mainColor, 10%) url("../img/noise66.png") repeat !important;
+}
+
+.logo-side {
+	margin-top: -35px;
 }
 
 // ============== SLIDER AREA ==============
@@ -519,6 +583,11 @@ aside {
 
 	.logo-side, .contact-side, #contactInfo {
 		text-align: center;
+		margin-top: 0;
+	}
+
+	#contactInfo {
+		padding-top: 10px;
 	}
 
 	.quote-bubble{

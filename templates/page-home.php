@@ -9,7 +9,8 @@ get_header(); ?>
 
 	<!-- REVOLUTION SLIDER -->
 <?php //putRevSlider( "homeslider" ) ?>
-<?php putRevSlider( "homepage" ) ?>
+<?php //putRevSlider( "homepage" ) ?>
+<?php putRevSlider( "homepageblue" ) ?>
 
 
 	<!-- MAIN CONTENT -->
