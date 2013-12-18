@@ -6,26 +6,26 @@
 
 get_header(); ?>
 
-<!-- Begin Page -->
-<div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+	<!-- Begin Page -->
+	<div class="row" style="margin-top: 10px; margin-bottom: 10px;">
 
-    <!-- Main Content -->
-    <div class="large-9 columns" role="content">
+		<!-- Main Content -->
+		<div class="large-9 columns" role="content">
 
-		<?php if ( have_posts() ) : ?>
+			<?php if ( have_posts() ) : ?>
 
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content', 'page' ); ?>
-			<?php endwhile; ?>
-			
-		<?php endif; ?>
+				<?php while ( have_posts() ) : the_post(); ?>
+					<?php get_template_part( 'content', 'page' ); ?>
+				<?php endwhile; ?>
 
-    </div>
-    <!-- End Main Content -->
+			<?php endif; ?>
 
-	<?php get_sidebar(); ?>
+		</div>
+		<!-- End Main Content -->
 
-</div>
-<!-- End Page -->
+		<?php get_sidebar(); ?>
+
+	</div>
+	<!-- End Page -->
 
 <?php get_footer(); ?>

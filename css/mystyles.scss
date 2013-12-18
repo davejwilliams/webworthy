@@ -2,7 +2,8 @@
 
 //$mainColor: #B52725;
 $mainColor: #2685b5;
-$linkHover: #ff3734;
+//$linkHover: #ff3734;
+$linkHover: #7AD03A;
 $secondaryColor: #FFFFFF;
 $tertiaryColor: rgba(0, 0, 0, 0.085);
 //$tertiaryColor: rgba(0, 0, 0, 0.8);
@@ -45,7 +46,9 @@ p, li {
 }
 
 h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', sans-serif;
 	color: $mainColor;
+	font-weight: 400;
 }
 
 a{
@@ -77,8 +80,15 @@ h4 {
 }
 
 h6 a {
-	font-weight: 500;
 	color: $mainColor;
+	font-size: 20px;
+	font-weight: 400;
+//	font-weight: bold;
+//	display: block;
+//	padding: 10px;
+//	background-color: $tertiaryColor;
+//	border-top: 1px solid $mainColor;
+//	border-bottom: 1px solid $mainColor;
 }
 
 .big-shadow {
@@ -138,7 +148,8 @@ header.mainHeader {
 		margin-bottom: 5px;
 	}
 	a:hover{
-		text-decoration: underline;
+		text-decoration: none;
+		color: $linkHover;
 	}
 	img{
 		display: inline-block;
@@ -305,13 +316,14 @@ $menuColor: rgba(0, 0, 0, 0.1) !important;
 }
 
 #ourDifference {
-	background-color: $tertiaryColor;
+//	background-color: $tertiaryColor;
 //	background-image: url("../img/left-cross-5px.png");
 //	background: url("../img/bg-texture.png");
-//	background: $tertiaryColor url("../img/shadow.png") no-repeat center top;
+	background: $tertiaryColor url("../img/shadow3.png") no-repeat center top;
+	background-size: 100%;
 	text-align: justify;
-//	padding: 30px 0 25px 0;
-	padding: 8px 0 25px 0;
+	padding: 15px 0 25px 0;
+//	padding: 8px 0 25px 0;
 	margin-bottom: 20px;
 	margin-top: 0;
 	strong {
@@ -320,7 +332,7 @@ $menuColor: rgba(0, 0, 0, 0.1) !important;
 		position: absolute;
 		left: 50%;
 		margin-left: -120px;
-		margin-top: -47px;
+		margin-top: -31px;
 		padding: 5px 50px;
 		font-size: 12px;
 		text-transform: uppercase;
@@ -338,7 +350,7 @@ $menuColor: rgba(0, 0, 0, 0.1) !important;
 	display: table;
 	margin: -45px auto 0 auto;
 	padding: 45px 30px 0 30px;
-	background-image: url("../img/shadow-bg.png");
+	background-image: url("../img/shadow-bg-white.png");
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: center top;
@@ -355,7 +367,7 @@ $menuColor: rgba(0, 0, 0, 0.1) !important;
 	margin: -3px 10px 0 0;
 }
 
-// ============== WHATS NEW AREA ==============
+// ============== NOTEWORTHY AREA ==============
 
 #whatsNew {
 	color: $textColor;
@@ -365,6 +377,11 @@ $menuColor: rgba(0, 0, 0, 0.1) !important;
 			//height: 15px;
 		}
 	}
+}
+
+.more-link {
+	margin-left: 5px;
+	font-size: 12px;
 }
 
 // ============== TESTIMONIALS AREA ==============
@@ -414,9 +431,13 @@ $menuColor: rgba(0, 0, 0, 0.1) !important;
 	width: 100%;
 	padding: 0 20px;
 	margin-bottom: 10px;
-	h1, h2, h3, h4, h4, h6 {
+	h2 {
+//		color: $secondaryColor;
+		background-color: $tertiaryColor;
+		font-size: 30px;
+//		text-transform: uppercase;
 		text-align: center;
-		border-bottom: 3px solid $mainColor;
+//		border-bottom: 2px solid $mainColor;
 	}
 }
 

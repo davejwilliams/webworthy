@@ -63,11 +63,11 @@
 	</div>
 
 	<div class="row">
-		<div class="large-6 medium-6 small-12 columns logo-side">
+		<div class="large-4 medium-4 small-12 columns logo-side">
 			<a href=" <?php echo home_url(); ?> "><img id="logo" src="<?php bloginfo( 'template_directory' ); ?>/img/webworthy-logo-50.png" alt="<?php bloginfo('name'); ?>"></a>
 			<p class="description"><?php bloginfo('description'); ?></p>
 		</div>
-		<div class="large-6 medium-6 small-12 columns contact-side">
+		<div class="large-4 medium-4 small-12 columns contact-side">
 			<div id="contactInfo">
 				<a class="phone-link" href="tel:732-784-3141">(732) 784-3141 <img class="icons-phone" src="<?php bloginfo( 'template_directory' ); ?>/img/icons-phone.png" alt="732-784-3141 Phone Icon"></a><br>
 				<a class="email-link" href="mailto:info@webworthydesign.com">info@webworthydesign.com <img class="icons-email" src="<?php bloginfo( 'template_directory' ); ?>/img/icons-email.png" alt="email-icon"></a>

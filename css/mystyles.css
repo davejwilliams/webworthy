@@ -21,14 +21,16 @@ p, li {
   color: gray; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #2685b5; }
+  font-family: 'Open Sans', sans-serif;
+  color: #2685b5;
+  font-weight: 400; }
 
 a {
   color: #2685b5;
   text-decoration: none; }
 
 a:hover {
-  color: #ff3734;
+  color: #7ad03a;
   text-decoration: underline; }
 
 .topBand a, #navBand a {
@@ -47,8 +49,9 @@ h4 {
   margin-top: 20px; }
 
 h6 a {
-  font-weight: 500;
-  color: #2685b5; }
+  color: #2685b5;
+  font-size: 20px;
+  font-weight: 400; }
 
 .big-shadow {
   background: rgba(0, 0, 0, 0.085) url("../img/big_shadow.png") no-repeat center top; }
@@ -92,7 +95,8 @@ header.mainHeader {
     display: inline-block;
     margin-bottom: 5px; }
   #contactInfo a:hover {
-    text-decoration: underline; }
+    text-decoration: none;
+    color: #7ad03a; }
   #contactInfo img {
     display: inline-block;
     margin: 5px 0 -2px 5px; }
@@ -207,9 +211,10 @@ header.mainHeader {
   width: 100%; }
 
 #ourDifference {
-  background-color: rgba(0, 0, 0, 0.085);
+  background: rgba(0, 0, 0, 0.085) url("../img/shadow3.png") no-repeat center top;
+  background-size: 100%;
   text-align: justify;
-  padding: 8px 0 25px 0;
+  padding: 15px 0 25px 0;
   margin-bottom: 20px;
   margin-top: 0; }
   #ourDifference strong {
@@ -218,7 +223,7 @@ header.mainHeader {
     position: absolute;
     left: 50%;
     margin-left: -120px;
-    margin-top: -47px;
+    margin-top: -31px;
     padding: 5px 50px;
     font-size: 12px;
     text-transform: uppercase;
@@ -232,7 +237,7 @@ header.mainHeader {
   display: table;
   margin: -45px auto 0 auto;
   padding: 45px 30px 0 30px;
-  background-image: url("../img/shadow-bg.png");
+  background-image: url("../img/shadow-bg-white.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center top; }
@@ -249,6 +254,10 @@ header.mainHeader {
   color: gray; }
   #whatsNew ul {
     list-style: none; }
+
+.more-link {
+  margin-left: 5px;
+  font-size: 12px; }
 
 .bubble {
   position: relative;
@@ -286,9 +295,10 @@ header.mainHeader {
   width: 100%;
   padding: 0 20px;
   margin-bottom: 10px; }
-  .portfolioBand h1, .portfolioBand h2, .portfolioBand h3, .portfolioBand h4, .portfolioBand h4, .portfolioBand h6 {
-    text-align: center;
-    border-bottom: 3px solid #2685b5; }
+  .portfolioBand h2 {
+    background-color: rgba(0, 0, 0, 0.085);
+    font-size: 30px;
+    text-align: center; }
 
 #menu-portfolio-genres .current-menu-item {
   text-decoration: underline;
@@ -345,7 +355,7 @@ footer {
     margin-bottom: 5px; }
   #footerContactInfo a:hover {
     text-decoration: underline;
-    color: #ff3734; }
+    color: #7ad03a; }
   #footerContactInfo img {
     display: inline-block;
     margin: 5px 0 -2px 5px; }

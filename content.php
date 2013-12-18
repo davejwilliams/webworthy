@@ -29,7 +29,7 @@
 		   title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail(); ?></a>
 	<?php endif; ?>
 
-	<?php the_excerpt(); ?>
+	<p><?php the_excerpt(); ?></p>
 
 	<hr>
 

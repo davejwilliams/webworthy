@@ -4,26 +4,33 @@
  *
  * Loop container for single post content
  *
- * @package WordPress
+ * @package    WordPress
  * @subpackage Foundation, for WordPress
- * @since Foundation, for WordPress 4.0
+ * @since      Foundation, for WordPress 4.0
  */
 
 get_header(); ?>
 
-    <!-- Main Content -->
-    <div class="large-9 columns" role="main">
+	<!-- Begin Page -->
+	<div class="row" style="margin-top: 10px; margin-bottom: 10px;">
 
-		<?php if ( have_posts() ) : ?>
+		<!-- Main Content -->
+		<div class="large-9 columns" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content', 'single' ); ?>
-			<?php endwhile; ?>
-			
-		<?php endif; ?>
+			<?php if ( have_posts() ) : ?>
 
-    </div>
-    <!-- End Main Content -->
+				<?php while ( have_posts() ) : the_post(); ?>
+					<?php get_template_part( 'content', 'single' ); ?>
+				<?php endwhile; ?>
 
-<?php get_sidebar(); ?>
+			<?php endif; ?>
+
+		</div>
+		<!-- End Main Content -->
+
+		<?php get_sidebar(); ?>
+
+	</div>
+	<!-- End Page -->
+
 <?php get_footer(); ?>

@@ -318,9 +318,24 @@ endif;
  * Custom Post Excerpt
  */
 
+
+// custom excerpt length
+function themify_custom_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'themify_custom_excerpt_length', 999 );
+
+// add more link to excerpt
+function themify_custom_excerpt_more($more) {
+	global $post;
+	return '... <a href="'. get_permalink($post->ID) . '" class="more-link">Read More</a>';
+}
+add_filter('excerpt_more', 'themify_custom_excerpt_more');
+
 /*
 function custom_excerpt_length( $length ) {
-	return 20;
+	return 15;
+//	return $length;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 */

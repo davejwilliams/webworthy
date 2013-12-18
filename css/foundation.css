@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-	background: #fff;
+	/*background: #fff;*/
 	color: #222;
 	padding: 0;
 	margin: 0;
@@ -1167,7 +1167,9 @@ a {
 }
 
 a:hover, a:focus {
-	color: #ff3734;
+	/*color: #ff3734;*/
+	color: #7AD03A;
+	text-decoration: none;
 }
 
 a img {
@@ -1493,7 +1495,8 @@ button, .button {
 }
 
 button:hover, button:focus, .button:hover, .button:focus {
-	background-color: #ff3734;
+	/*background-color: #ff3734;*/
+	background-color: #7AD03A;
 }
 
 button:hover, button:focus, .button:hover, .button:focus {
@@ -4687,8 +4690,8 @@ table thead tr th, table tfoot tr th, table tbody tr td, table tr td, table tfoo
 }
 
 .th:hover, .th:focus {
-	-webkit-box-shadow: 0 0 6px 1px rgba(181, 39, 37, 0.5);
-	box-shadow: 0 0 6px 1px rgba(181, 39, 37, 0.5)
+	-webkit-box-shadow: 0 0 6px 1px rgba(160, 206, 78, 1.0);
+	box-shadow: 0 0 6px 1px rgba(160, 206, 78, 1.0);
 }
 
 .th.radius {

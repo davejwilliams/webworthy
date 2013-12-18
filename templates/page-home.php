@@ -70,7 +70,7 @@ get_header(); ?>
 
 
 	<div class="row">
-		<!-- WHAT'S NEW -->
+		<!-- NOTEWORTHY -->
 		<?php
 		global $more;
 		$more = 0;
@@ -81,28 +81,27 @@ get_header(); ?>
 		?>
 
 		<div class="large-6 small-12 columns" id="whatsNew">
-			<h6><a href="#">What's New</a></h6>
+			<h6><a href="<?php echo site_url(); ?>/noteworthy">Noteworthy</a></h6>
 			<ul>
 				<?php query_posts( $args ); ?>
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-					<!--<li>
-					<a href="<?php //the_permalink(); ?>"><?php //the_title(); ?></a>
-					<?php //the_date(); ?>
-					<p><?php //echo get_excerpt(50); ?></p>
-				</li>-->
+					<li>
+						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> / <small><?php echo get_the_date( $d ); ?></small>
+						<p><?php echo the_excerpt(10); ?></p>
+					</li>
 
-					<li>
-						<p><?php echo the_excerpt( 70 ); ?></p>
-					</li>
-					<li>
-						<hr class="embossed">
-					</li>
+<!--					<li>-->
+<!--						<p><a href="--><?php //the_permalink(); ?><!--">--><?php //echo the_excerpt( 70 ); ?><!--</a></p>-->
+<!--					</li>-->
+
+<!--					<li><hr class="embossed"></li>-->
+
 				<?php endwhile; ?>
 				<?php endif; ?>
 			</ul>
 		</div>
-		<!-- END WHAT'S NEW -->
+		<!-- END NOTEWORTHY -->
 
 
 		<!--TESTIMONIALS -->
@@ -127,18 +126,57 @@ get_header(); ?>
 	</div>
 
 
+	<div class="row" style="margin-bottom: 20px;">
+		<div class="large-12 small-12 columns">
+			<hr class="embossed">
+		</div>
+	</div>
+
 	<!--LATEST WORK -->
+
+<?php
+// Setup for the loop
+$args = array(
+	'cat'            => 'genre',
+	'post_type'      => 'portfoliopiece',
+	'genre'          => '',
+	'posts_per_page' => 6
+);
+
+$portfolio_loop = new WP_Query( $args );
+?>
+
 	<div class="row">
 		<div class="large-12 columns">
 			<h6><a href="<?php echo site_url(); ?>/work">Latest Work</a></h6>
-			<ul class="large-block-grid-6 small-block-grid-2">
-				<li><img src="http://placehold.it/350x150" alt="placeholder"></li>
-				<li><img src="http://placehold.it/350x150" alt="placeholder"></li>
-				<li><img src="http://placehold.it/350x150" alt="placeholder"></li>
-				<li><img src="http://placehold.it/350x150" alt="placeholder"></li>
-				<li><img src="http://placehold.it/350x150" alt="placeholder"></li>
-				<li><img src="http://placehold.it/350x150" alt="placeholder"></li>
-			</ul>
+
+			<?php
+			if ( $portfolio_loop->have_posts() ): ?>
+
+				<ul class="large-block-grid-6 small-block-grid-2">
+					<?php while ( $portfolio_loop->have_posts() ): ?>
+						<?php $portfolio_loop->the_post(); ?>
+						<!--						<li><img src="http://placehold.it/350x150" alt="placeholder"></li>-->
+
+						<li>
+							<a href="<?php the_permalink(); ?>">
+								<?php if ( has_post_thumbnail() ): ?>
+									<?php the_post_thumbnail( 'thumbnail', array( 'class' => 'th' ) ); ?>
+								<?php endif; ?>
+							</a>
+						</li>
+					<?php endwhile; ?>
+				</ul>
+
+			<?php else: ?>
+				<p>No Website Pieces Found</p>
+			<?php endif; ?>
+
+			<?php
+			// Restore original Post Data
+			wp_reset_postdata();
+			?>
+
 		</div>
 	</div>
 
