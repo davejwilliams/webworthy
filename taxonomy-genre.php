@@ -7,6 +7,7 @@
 
 <div class="portfolioBand">
 			<ul class="small-block-grid-1 large-block-grid-4">
+
 				<?php if (have_posts()) : ?>
 
 					<?php while (have_posts()) : the_post(); ?>

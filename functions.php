@@ -146,7 +146,8 @@ function foundation_menus() {
 	register_nav_menus(
 		array(
 			'header-menu' => __( 'Header Menu', 'foundation' ),
-			'portfolio-menu' => __( 'Portfolio Menu', 'foundation' )
+			'portfolio-menu' => __( 'Portfolio Menu', 'foundation' ),
+			'footer-menu' => __( 'Footer Menu', 'foundation' )
 		)
 	);
 
@@ -534,4 +535,13 @@ function px_image_resize_dimensions( $payload, $orig_w, $orig_h, $dest_w, $dest_
 	return array( 0, 0, (int) $s_x, (int) $s_y, (int) $new_w, (int) $new_h, (int) $crop_w, (int) $crop_h );
 }
 add_filter( 'image_resize_dimensions', 'px_image_resize_dimensions', 10, 6 );
+
+function my_post_queries( $query ) {
+
+	if(is_tax()){
+		// show 50 posts on custom taxonomy pages
+		$query->set('posts_per_page', -1);
+	}
+}
+add_action( 'pre_get_posts', 'my_post_queries' );
 ?>

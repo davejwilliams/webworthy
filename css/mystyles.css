@@ -14,6 +14,10 @@
 .clearboth {
   clear: both; }
 
+.row.full-width {
+  width: 100%;
+  max-width: 100%; }
+
 body {
   font-family: 'Lato', sans-serif; }
 
@@ -74,7 +78,7 @@ h6 a {
 header.mainHeader {
   background: #2685b5 url("../img/noise66.png") repeat;
   width: 100%;
-  padding: 10px 0; }
+  padding: 10px; }
 
 #logo {
   width: 175px;
@@ -285,7 +289,7 @@ header.mainHeader {
 
 .portMenuBand {
   width: 100%;
-  margin-top: 10px; }
+  margin: 10px 10px 0; }
 
 .back-btn {
   margin-left: 10px;
@@ -343,8 +347,14 @@ header.mainHeader {
   width: 100%; }
 
 footer {
-  padding-top: 10px;
+  padding: 10px 10px 0 10px;
   min-height: 150px; }
+
+.footer-menu li {
+  display: inline;
+  padding: 0 15px; }
+.footer-menu li:first-child {
+  padding-left: 0; }
 
 #footerContactInfo {
   text-align: right;
@@ -354,7 +364,7 @@ footer {
     display: inline-block;
     margin-bottom: 5px; }
   #footerContactInfo a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: #7ad03a; }
   #footerContactInfo img {
     display: inline-block;

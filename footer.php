@@ -12,7 +12,7 @@
 
 <!-- Footer -->
 <div class="footerBand big-shadow">
-	<footer class="row">
+	<footer class="row full-width">
 
 		<div class="large-7 columns">
 			<a href=" <?php echo home_url(); ?> "><img id="logo" src="<?php bloginfo( 'template_directory' ); ?>/img/footerlogo.png" alt="<?php bloginfo('name'); ?>"></a>
@@ -33,15 +33,10 @@
 		</div>
 
 		<div class="large-12 columns">
-			<ul class="inline-list">
-				<?php $args = array(
-					'depth'    => 1,
-					'title_li' => __( '' ),
-					'sort_column'  => 'menu_order',
-				); ?>
-				<?php wp_list_pages( $args ); ?>
-				<li><a href="sitemap.xml">Sitemap</a></li>
-			</ul>
+
+				<!-- CREATE FOOTER MENU -->
+				<?php wp_nav_menu( array( 'theme_location' => 'footer-menu', 'container' => 'nav', 'container_class' => 'footer-menu' ) ); ?>
+
 			<hr class="embossed">
 		<p style="font-size: 12px;">Copyright &copy; <?php echo date( "Y" ); ?> <?php bloginfo( 'name' ); ?>. All rights reserved.</p>
 		</div>

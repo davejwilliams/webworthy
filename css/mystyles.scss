@@ -35,6 +35,8 @@ $embossedBorder: rgba(0, 0, 0, 0.085) transparent rgba(255, 255, 255, 0.75) tran
 	clear: both;
 }
 
+.row.full-width { width: 100%; max-width: 100%; }
+
 body {
 //	font-family: 'Open Sans', sans-serif;
 	font-family: 'Lato', sans-serif;
@@ -119,7 +121,7 @@ header.mainHeader {
 //	background: $mainColor url("../img/100-90-10.png") repeat;
 	background: $mainColor url("../img/noise66.png") repeat;
 	width: 100%;
-	padding: 10px 0;
+	padding: 10px;
 }
 
 #logo {
@@ -419,7 +421,7 @@ $menuColor: rgba(0, 0, 0, 0.1) !important;
 // ============== PORTFOLIO ==============
 .portMenuBand {
 	width: 100%;
-	margin-top: 10px;
+	margin: 10px 10px 0;
 }
 
 .back-btn {
@@ -507,8 +509,19 @@ $menuColor: rgba(0, 0, 0, 0.1) !important;
 }
 
 footer{
-	padding-top: 10px;
+//	padding-top: 10px;
+	padding: 10px 10px 0 10px;
 	min-height: 150px;
+}
+
+.footer-menu{
+	li {
+		display: inline;
+		padding: 0 15px;
+	}
+	li:first-child {
+		padding-left: 0;
+	}
 }
 
 #footerContactInfo {
@@ -520,7 +533,7 @@ footer{
 		margin-bottom: 5px;
 	}
 	a:hover{
-		text-decoration: underline;
+		text-decoration: none;
 		color: $linkHover;
 	}
 	img{

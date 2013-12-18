@@ -47,7 +47,7 @@
 
 <header class="mainHeader">
 
-	<div class="row">
+	<div class="row full-width">
 		<nav class="top-bar">
 			<ul class="title-area">
 				<!--<li class="name"><h1><a href="--><?php //echo esc_url( home_url( '/' ) ); ?><!--" title="-->
@@ -62,7 +62,7 @@
 		</nav>
 	</div>
 
-	<div class="row">
+	<div class="row full-width">
 		<div class="large-4 medium-4 small-12 columns logo-side">
 			<a href=" <?php echo home_url(); ?> "><img id="logo" src="<?php bloginfo( 'template_directory' ); ?>/img/webworthy-logo-50.png" alt="<?php bloginfo('name'); ?>"></a>
 			<p class="description"><?php bloginfo('description'); ?></p>
