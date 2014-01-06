@@ -29,6 +29,10 @@
 	<link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 
+<!-- Set Favicon -->
+	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico" type="image/x-icon">
+
 	<!-- Set the viewport width to device width for mobile -->
 	<meta name="viewport" content="width=device-width" />
 
@@ -44,6 +48,14 @@
 
 <body <?php body_class(); ?>>
 
+<div class="rainbow">
+	<div class="color1"></div>
+	<div class="color2"></div>
+	<div class="color3"></div>
+	<div class="color4"></div>
+	<div class="color5"></div>
+	<div class="color6"></div>
+</div>
 
 <header class="mainHeader">
 

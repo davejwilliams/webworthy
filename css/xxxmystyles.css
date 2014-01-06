@@ -26,7 +26,7 @@ p, li {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', sans-serif;
-  color: #3a3a3a;
+  color: #2685b5;
   font-weight: 400; }
 
 a {
@@ -53,7 +53,7 @@ h4 {
   margin-top: 20px; }
 
 h6 a {
-  color: #3a3a3a;
+  color: #2685b5;
   font-size: 20px;
   font-weight: 400; }
 
@@ -76,19 +76,9 @@ h6 a {
   margin: 10px auto; }
 
 header.mainHeader {
-  background: #3a3a3a url("../img/noise66.png") repeat;
+  background: #2685b5 url("../img/noise66.png") repeat;
   width: 100%;
   padding: 10px; }
-
-.rainbow {
-  width: 100%;
-  margin: 0;
-  padding: 0; }
-
-.color1, .color2, .color3, .color4, .color5, .color6 {
-  height: 6px;
-  width: 16.66666666666667%;
-  float: left; }
 
 #logo {
   width: 175px;
@@ -147,21 +137,21 @@ header.mainHeader {
 
 #menu-main-menu .current_page_item, #menu-main-menu li:hover {
   border-radius: 5px;
-  background: #2d2d2d url("../img/noise66.png") repeat !important; }
+  background-color: rgba(0, 0, 0, 0.1) !important; }
 
 #menu-main-menu .has-dropdown:hover {
   border-radius: 5px 5px 0 0;
-  background: #2d2d2d url("../img/noise66.png") repeat !important; }
+  background-color: rgba(0, 0, 0, 0.1) !important; }
 
 .top-bar-section .dropdown li:hover {
   border-radius: 0 !important; }
 
 .top-bar-section .dropdown li a {
-  background: #2d2d2d url("../img/noise66.png") repeat !important;
+  background: #2276a0 url("../img/noise66.png") repeat !important;
   text-decoration: none; }
 
 .top-bar-section .dropdown li a:hover {
-  background: #212121 url("../img/noise66.png") repeat !important; }
+  background: #1d668b url("../img/noise66.png") repeat !important; }
 
 .logo-side {
   margin-top: -35px; }
@@ -229,9 +219,10 @@ header.mainHeader {
   background-size: 100%;
   text-align: justify;
   padding: 15px 0 25px 0;
+  margin-bottom: 20px;
   margin-top: 0; }
   #ourDifference strong {
-    background-color: #3a3a3a;
+    background-color: #2685b5;
     color: #ffffff;
     position: absolute;
     left: 50%;
@@ -246,35 +237,17 @@ header.mainHeader {
     margin-bottom: 10px; }
 
 .services-bg {
-  background-color: rgba(0, 0, 0, 0.085); }
+  clear: both;
+  display: table;
+  margin: -45px auto 0 auto;
+  padding: 45px 30px 0 30px;
+  background-image: url("../img/shadow-bg-white.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center top; }
 
 .services-box {
-  min-height: 195px;
-  padding-top: 15px; }
-  .services-box p {
-    color: #333333; }
-  .services-box h6 a {
-    color: white; }
-  .services-box h6 a:hover {
-    color: #3a3a3a; }
-
-.boxNumber1, .color1 {
-  background-color: #a0ce4e; }
-
-.boxNumber2, .color2 {
-  background-color: #e77b4d; }
-
-.boxNumber3, .color3 {
-  background-color: #f9c000; }
-
-.boxNumber4, .color4 {
-  background-color: #e75050; }
-
-.boxNumber5, .color5 {
-  background-color: #4e7489; }
-
-.boxNumber6, .color6 {
-  background-color: #e4366d; }
+  min-height: 195px; }
 
 .icon {
   width: auto;
@@ -293,7 +266,7 @@ header.mainHeader {
 .bubble {
   position: relative;
   padding: 10px;
-  background: #3a3a3a;
+  background: #2685b5;
   color: #ffffff; }
 
 .bubble:after {
@@ -301,7 +274,7 @@ header.mainHeader {
   position: absolute;
   border-style: solid;
   border-width: 15px 10px 0;
-  border-color: #3a3a3a transparent;
+  border-color: #2685b5 transparent;
   display: block;
   width: 0;
   z-index: 1;
@@ -333,7 +306,7 @@ header.mainHeader {
 
 #menu-portfolio-genres .current-menu-item {
   text-decoration: underline;
-  color: #3a3a3a; }
+  color: #2685b5; }
 
 .portfolioItem {
   text-align: center; }
@@ -369,7 +342,7 @@ header.mainHeader {
   width: 70px; }
 
 .footerBand {
-  background-color: #3a3a3a;
+  background-color: rgba(0, 0, 0, 0.085);
   padding: 20px 0;
   width: 100%; }
 
@@ -382,14 +355,12 @@ footer {
   padding: 0 15px; }
 .footer-menu li:first-child {
   padding-left: 0; }
-.footer-menu a {
-  color: #2685b5; }
 
 #footerContactInfo {
   text-align: right;
   padding: 0 0 5px 0; }
   #footerContactInfo a {
-    color: white;
+    color: #2685b5;
     display: inline-block;
     margin-bottom: 5px; }
   #footerContactInfo a:hover {
@@ -406,8 +377,6 @@ hr.embossed {
 
 aside {
   background-color: white; }
-  aside h5 {
-    color: #3a3a3a; }
 
 .sidebar h5 {
   padding-bottom: 5px;
@@ -423,7 +392,7 @@ aside {
     padding: 0 22px; }
 
   .services-box {
-    min-height: 250px; } }
+    min-height: 230px; } }
 /* Small screens */
 @media only screen and (max-width: 767px) {
   .banner ul li {

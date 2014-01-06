@@ -29,9 +29,6 @@ get_header(); ?>
 		<div class="row">
 
 			<?php
-
-			$boxNumber = 1;
-
 			$args = array(
 				'orderby'   => 'post__in',
 				'post_type' => 'page',
@@ -47,8 +44,7 @@ get_header(); ?>
 			$page_query = new WP_Query( $args ); ?>
 
 			<?php while ( $page_query->have_posts() ) : $page_query->the_post(); ?>
-
-				<div class="large-4 columns services-box boxNumber<?php echo $boxNumber; ?>">
+				<div class="large-4 columns services-box">
 					<h6>
 						<a href="<?php the_permalink(); ?>">
 							<?php if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
@@ -59,9 +55,6 @@ get_header(); ?>
 
 					<p><?php echo wp_trim_words( get_the_content(), 25 ); ?></p>
 				</div>
-
-				<?php $boxNumber++; ?>
-
 			<?php endwhile; ?>
 
 		</div>
@@ -71,7 +64,7 @@ get_header(); ?>
 
 	<div class="row" style="margin-bottom: 20px;">
 		<div class="large-12 small-12 columns">
-<!--			<hr class="embossed">-->
+			<hr class="embossed">
 		</div>
 	</div>
 

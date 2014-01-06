@@ -22,8 +22,8 @@
 		<div class="large-5 columns">
 			<div style="float: right; text-align: right; margin-bottom: 20px;">
 				<div id="footerContactInfo">
-					<a class="phone-link" href="tel:732-784-3141">(732) 784-3141 <img class="icons-phone" src="<?php bloginfo( 'template_directory' ); ?>/img/icons-phone-red.png" alt="732-784-3141 Phone Icon"></a><br>
-					<a class="email-link" href="mailto:info@webworthydesign.com">info@webworthydesign.com <img class="icons-email" src="<?php bloginfo( 'template_directory' ); ?>/img/icons-email-red.png"  alt="email-icon"></a>
+					<a class="phone-link" href="tel:732-784-3141">(732) 784-3141 <img class="icons-phone" src="<?php bloginfo( 'template_directory' ); ?>/img/icons-phone.png" alt="732-784-3141 Phone Icon"></a><br>
+					<a class="email-link" href="mailto:info@webworthydesign.com">info@webworthydesign.com <img class="icons-email" src="<?php bloginfo( 'template_directory' ); ?>/img/icons-email.png"  alt="email-icon"></a>
 				</div>
 				<a href="<?php echo site_url(); ?>/contact"><img src="<?php bloginfo( 'template_directory' ); ?>/img/social-icons-email.png" alt="envelope-icon"></a>
 				<a href="http://www.facebook.com/webworthydesign/" target="_blank"><img src="<?php bloginfo( 'template_directory' ); ?>/img/social-icons-facebook.png" alt="facebook-logo"></a>

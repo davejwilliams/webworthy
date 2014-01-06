@@ -1,15 +1,9 @@
 // Type 'compass watch' in the console, while in the site directory, to start the SCSS program.
 
-$color1: #A0CE4E; //green
-$color2: #e77b4d; //orange
-$color3: #f9c000; //yellow
-$color4: #e75050; //red
-$color5: #4e7489; //blue
-$color6: #e4366d; //pink
-
-//$mainColor: #B52725; //red
-//$mainColor: #2685b5; //blue
-$mainColor: #3a3a3a; //grey
+//$mainColor: #B52725;
+$mainColor: #2685b5;
+//$linkHover: #ff3734;
+$linkHover: #7AD03A;
 $secondaryColor: #FFFFFF;
 $tertiaryColor: rgba(0, 0, 0, 0.085);
 //$tertiaryColor: rgba(0, 0, 0, 0.8);
@@ -17,17 +11,10 @@ $navColor: #555;
 $textColor: #808080;
 $headerColor: #555555;
 
-//$link: #A0CE4E;
-$link: #2685b5;
-//$linkHover: #ff3734;
-$linkHover: #7AD03A; //light-green
-
 //$bubbleColor: rgba(15, 67, 91, 0.3);
 //$bubbleColor: #F6F6F6;
 $bubbleColor: rgba(0, 0, 0, 0.04);
 $embossedBorder: rgba(0, 0, 0, 0.085) transparent rgba(255, 255, 255, 0.75) transparent;
-
-
 
 /* apply a natural box layout model to all elements */
 *, *:before, *:after {
@@ -51,25 +38,23 @@ $embossedBorder: rgba(0, 0, 0, 0.085) transparent rgba(255, 255, 255, 0.75) tran
 .row.full-width { width: 100%; max-width: 100%; }
 
 body {
-	//	font-family: 'Open Sans', sans-serif;
+//	font-family: 'Open Sans', sans-serif;
 	font-family: 'Lato', sans-serif;
 }
 
 p, li {
 	color: $textColor;
-	//	font-size: 14px;
+//	font-size: 14px;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Open Sans', sans-serif;
 	color: $mainColor;
-//	color: $color6;
 	font-weight: 400;
 }
 
 a{
-//	color: $mainColor;
-	color: $link;
+	color: $mainColor;
 	text-decoration: none;
 }
 a:hover{
@@ -98,15 +83,14 @@ h4 {
 
 h6 a {
 	color: $mainColor;
-//	color: $color6;
 	font-size: 20px;
 	font-weight: 400;
-	//	font-weight: bold;
-	//	display: block;
-	//	padding: 10px;
-	//	background-color: $tertiaryColor;
-	//	border-top: 1px solid $mainColor;
-	//	border-bottom: 1px solid $mainColor;
+//	font-weight: bold;
+//	display: block;
+//	padding: 10px;
+//	background-color: $tertiaryColor;
+//	border-top: 1px solid $mainColor;
+//	border-bottom: 1px solid $mainColor;
 }
 
 .big-shadow {
@@ -133,24 +117,11 @@ h6 a {
 // ============== HEADER AREA ==============
 
 header.mainHeader {
-	//	background-color: $mainColor;
-	//	background: $mainColor url("../img/100-90-10.png") repeat;
+//	background-color: $mainColor;
+//	background: $mainColor url("../img/100-90-10.png") repeat;
 	background: $mainColor url("../img/noise66.png") repeat;
 	width: 100%;
 	padding: 10px;
-}
-
-.rainbow{
-	width: 100%;
-//	height: 10px;
-	margin: 0;
-	padding: 0;
-}
-
-.color1, .color2, .color3, .color4, .color5, .color6 {
-	height: 6px;
-	width: 16.66666666666667%;
-	float: left;
 }
 
 #logo {
@@ -162,9 +133,9 @@ header.mainHeader {
 .description {
 	font-size: 14px;
 	font-style: italic;
-	//	color: #E3D3D3;
-	//	color: #DDBAB9;
-	//	color: #ffffff;
+//	color: #E3D3D3;
+//	color: #DDBAB9;
+//	color: #ffffff;
 	color: #ecf8ff;
 	padding: 10px 0 0 0;
 	margin: 0;
@@ -199,11 +170,11 @@ header.mainHeader {
 
 .navBand {
 	background-color: $navColor;
-	//	background: #B52725 url("../img/noise66.png") repeat;
+//	background: #B52725 url("../img/noise66.png") repeat;
 	width: 100%;
-	//	border-top: 1px solid #262626;
-	//	outline: #7f1b1a solid 1px;
-	//	box-shadow: 0px -6px 12px rgba(0, 0, 0, 1.0);
+//	border-top: 1px solid #262626;
+//	outline: #7f1b1a solid 1px;
+//	box-shadow: 0px -6px 12px rgba(0, 0, 0, 1.0);
 }
 
 // ============== Nav Menu Hack ==============
@@ -217,7 +188,7 @@ $menuColor: rgba(0, 0, 0, 0.1) !important;
 
 .top-bar.expanded {
 	margin-bottom: 50px;
-	//	background-color: blue !important;
+//	background-color: blue !important;
 }
 
 .top-bar.expanded ul {
@@ -235,19 +206,17 @@ $menuColor: rgba(0, 0, 0, 0.1) !important;
 
 #menu-main-menu .current_page_item, #menu-main-menu li:hover {
 	border-radius: 5px;
-//	background-color: $menuColor;
-	background: darken($mainColor, 5%) url("../img/noise66.png") repeat !important;
+	background-color: $menuColor;
 }
 
 #menu-main-menu .has-dropdown:hover {
 	border-radius: 5px 5px 0 0;
-//	background-color: $menuColor;
-	background: darken($mainColor, 5%) url("../img/noise66.png") repeat !important;
+	background-color: $menuColor;
 }
 
 .dropdown {
-	//	background: $mainColor url("../img/noise66.png") repeat !important;
-	//	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+//	background: $mainColor url("../img/noise66.png") repeat !important;
+//	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .top-bar-section .dropdown li:hover {
@@ -255,15 +224,15 @@ $menuColor: rgba(0, 0, 0, 0.1) !important;
 }
 
 .top-bar-section .dropdown li a {
-	//	background-color: red !important;
-	//	background-color: $menuColor;
+//	background-color: red !important;
+//	background-color: $menuColor;
 	background: darken($mainColor, 5%) url("../img/noise66.png") repeat !important;
 	text-decoration: none;
 }
 
 .top-bar-section .dropdown li a:hover {
-	//	background-color: orange !important;
-	//	background-color: $menuColor;
+//	background-color: orange !important;
+//	background-color: $menuColor;
 	background: darken($mainColor, 10%) url("../img/noise66.png") repeat !important;
 }
 
@@ -295,16 +264,16 @@ $menuColor: rgba(0, 0, 0, 0.1) !important;
 .banner ul li {
 	list-style: none;
 	float: left;
-	//	min-height: 400px;
+//	min-height: 400px;
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: center center;
-	//	background-size: cover;
+//	background-size: cover;
 	h2{
 		text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
 		color: #ffffff;
 		font-family: 'Noto Sans', sans-serif;
-		//		line-height:105%;
+//		line-height:105%;
 		margin:20px 30px;
 		display: inline-block;
 	}
@@ -349,15 +318,15 @@ $menuColor: rgba(0, 0, 0, 0.1) !important;
 }
 
 #ourDifference {
-	//	background-color: $tertiaryColor;
-	//	background-image: url("../img/left-cross-5px.png");
-	//	background: url("../img/bg-texture.png");
+//	background-color: $tertiaryColor;
+//	background-image: url("../img/left-cross-5px.png");
+//	background: url("../img/bg-texture.png");
 	background: $tertiaryColor url("../img/shadow3.png") no-repeat center top;
 	background-size: 100%;
 	text-align: justify;
 	padding: 15px 0 25px 0;
-	//	padding: 8px 0 25px 0;
-//	margin-bottom: 20px;
+//	padding: 8px 0 25px 0;
+	margin-bottom: 20px;
 	margin-top: 0;
 	strong {
 		background-color: $mainColor;
@@ -378,62 +347,19 @@ $menuColor: rgba(0, 0, 0, 0.1) !important;
 	}
 }
 
-//.services-bg{
-//	clear: both;
-//	display: table;
-//	margin: -45px auto 0 auto;
-//	padding: 45px 30px 0 30px;
-//	background-image: url("../img/shadow-bg-white.png");
-//	background-size: 100% auto;
-//	background-repeat: no-repeat;
-//	background-position: center top;
-//}
-
 .services-bg{
-	background-color: $tertiaryColor;
-//	background-color: $mainColor;
+	clear: both;
+	display: table;
+	margin: -45px auto 0 auto;
+	padding: 45px 30px 0 30px;
+	background-image: url("../img/shadow-bg-white.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center top;
 }
 
 .services-box {
 	min-height: 195px;
-	padding-top: 15px;
-	p {
-		color: #333333;
-	}
-	h6 {
-		a{
-			color: $secondaryColor;
-		}
-		a:hover {
-			color: $mainColor;
-		}
-	}
-}
-
-.boxNumber1, .color1 {
-	background-color: $color1; //green
-}
-
-.boxNumber2, .color2 {
-	background-color: $color2; //orange
-}
-
-.boxNumber3, .color3 {
-//	background-color: #e75050; //red
-	background-color: $color3; //yellow
-}
-
-.boxNumber4, .color4 {
-//	background-color: #f9c000; //yellow
-	background-color: $color4; //red
-}
-
-.boxNumber5, .color5 {
-	background-color: $color5; //blue
-}
-
-.boxNumber6, .color6 {
-	background-color: $color6; //pink
 }
 
 .icon {
@@ -508,12 +434,12 @@ $menuColor: rgba(0, 0, 0, 0.1) !important;
 	padding: 0 20px;
 	margin-bottom: 10px;
 	h2 {
-		//		color: $secondaryColor;
+//		color: $secondaryColor;
 		background-color: $tertiaryColor;
 		font-size: 30px;
-		//		text-transform: uppercase;
+//		text-transform: uppercase;
 		text-align: center;
-		//		border-bottom: 2px solid $mainColor;
+//		border-bottom: 2px solid $mainColor;
 	}
 }
 
@@ -577,14 +503,13 @@ $menuColor: rgba(0, 0, 0, 0.1) !important;
 // ============== FOOTER AREA ==============
 
 .footerBand {
-//	background-color: $tertiaryColor;
-	background-color: $mainColor;
+	background-color: $tertiaryColor;
 	padding: 20px 0;
 	width: 100%;
 }
 
 footer{
-	//	padding-top: 10px;
+//	padding-top: 10px;
 	padding: 10px 10px 0 10px;
 	min-height: 150px;
 }
@@ -597,16 +522,13 @@ footer{
 	li:first-child {
 		padding-left: 0;
 	}
-	a {
-		color: $link;
-	}
 }
 
 #footerContactInfo {
 	text-align: right;
 	padding: 0 0 5px 0;
 	a{
-		color: $secondaryColor;
+		color: $mainColor;
 		display: inline-block;
 		margin-bottom: 5px;
 	}
@@ -630,21 +552,18 @@ hr.embossed {
 
 aside {
 	background-color: $secondaryColor;
-	h5{
-		color: $mainColor;
-	}
 }
 
 // ============== ASIDE AREA ==============
 
 .sidebar {
-	//	border-left: 1px solid #dddddd;
-	//	border-bottom: 1px solid #dddddd;
-	//	box-shadow: -4px 4px 3px rgba(0, 0, 0, .15);
-	//	background: url("../img/sidebar_right_inner.png") repeat-y left;
-	//	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.15);
-	//	margin-top: -10px;
-	//	min-height: 1000px;
+//	border-left: 1px solid #dddddd;
+//	border-bottom: 1px solid #dddddd;
+//	box-shadow: -4px 4px 3px rgba(0, 0, 0, .15);
+//	background: url("../img/sidebar_right_inner.png") repeat-y left;
+//	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.15);
+//	margin-top: -10px;
+//	min-height: 1000px;
 	h5{
 		padding-bottom: 5px;
 		border-bottom: 1px solid #DDDDDD;
@@ -672,7 +591,7 @@ aside {
 	}
 
 	.services-box {
-		min-height: 250px;
+		min-height: 230px;
 	}
 
 }
