@@ -20,14 +20,14 @@ $headerColor: #555555;
 //$link: #A0CE4E;
 $link: #2685b5;
 //$linkHover: #ff3734;
-$linkHover: #7AD03A; //light-green
+$linkHover: #7AD03A;
+//light-green
 
 //$bubbleColor: rgba(15, 67, 91, 0.3);
 //$bubbleColor: #F6F6F6;
 $bubbleColor: rgba(0, 0, 0, 0.04);
-$embossedBorder: rgba(0, 0, 0, 0.085) transparent rgba(255, 255, 255, 0.75) transparent;
-
-
+$embossedBorder: rgba(0, 0, 0, 0.4) transparent rgba(255, 255, 255, 0.09) transparent;
+//$embossedBorder: rgba(0, 0, 0, 0.4) rgba(0, 0, 0, 0) rgba(255, 255, 255, 0.09);
 
 /* apply a natural box layout model to all elements */
 *, *:before, *:after {
@@ -48,7 +48,10 @@ $embossedBorder: rgba(0, 0, 0, 0.085) transparent rgba(255, 255, 255, 0.75) tran
 	clear: both;
 }
 
-.row.full-width { width: 100%; max-width: 100%; }
+.row.full-width {
+	width: 100%;
+	max-width: 100%;
+}
 
 body {
 	//	font-family: 'Open Sans', sans-serif;
@@ -63,16 +66,18 @@ p, li {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Open Sans', sans-serif;
 	color: $mainColor;
-//	color: $color6;
+	//	color: $color6;
 	font-weight: 400;
 }
 
-a{
-//	color: $mainColor;
+a {
+	//	color: $mainColor;
 	color: $link;
 	text-decoration: none;
+	transition: .3s;
 }
-a:hover{
+
+a:hover {
 	color: $linkHover;
 	text-decoration: underline;
 }
@@ -98,7 +103,7 @@ h4 {
 
 h6 a {
 	color: $mainColor;
-//	color: $color6;
+	//	color: $color6;
 	font-size: 20px;
 	font-weight: 400;
 	//	font-weight: bold;
@@ -130,6 +135,7 @@ h6 a {
 	border: 1px solid blue;
 	margin: 10px auto;
 }
+
 // ============== HEADER AREA ==============
 
 header.mainHeader {
@@ -140,9 +146,9 @@ header.mainHeader {
 	padding: 10px;
 }
 
-.rainbow{
+.rainbow {
 	width: 100%;
-//	height: 10px;
+	//	height: 10px;
 	margin: 0;
 	padding: 0;
 }
@@ -164,8 +170,8 @@ header.mainHeader {
 	font-style: italic;
 	//	color: #E3D3D3;
 	//	color: #DDBAB9;
-	//	color: #ffffff;
-	color: #ecf8ff;
+	color: #ffffff;
+	//	color: #ecf8ff;
 	padding: 10px 0 0 0;
 	margin: 0;
 }
@@ -173,16 +179,16 @@ header.mainHeader {
 #contactInfo {
 	text-align: right;
 	padding: 65px 0 0 0;
-	a{
+	a {
 		color: #ffffff;
 		display: inline-block;
 		margin-bottom: 5px;
 	}
-	a:hover{
+	a:hover {
 		text-decoration: none;
 		color: $linkHover;
 	}
-	img{
+	img {
 		display: inline-block;
 		margin: 5px 0 -2px 5px;
 	}
@@ -207,7 +213,8 @@ header.mainHeader {
 }
 
 // ============== Nav Menu Hack ==============
-$menuColor: rgba(0, 0, 0, 0.1) !important;
+$menuColor: rgba(0, 0, 0, 0.1)!important
+;
 
 .top-bar, .top-bar-section ul, .top-bar-section li a:not(.button), .top-bar.expanded .title-area {
 	background-color: transparent !important;
@@ -235,19 +242,22 @@ $menuColor: rgba(0, 0, 0, 0.1) !important;
 
 #menu-main-menu .current_page_item, #menu-main-menu li:hover {
 	border-radius: 5px;
-//	background-color: $menuColor;
+	//	background-color: $menuColor;
 	background: darken($mainColor, 5%) url("../img/noise66.png") repeat !important;
 }
 
 #menu-main-menu .has-dropdown:hover {
 	border-radius: 5px 5px 0 0;
-//	background-color: $menuColor;
+	//	background-color: $menuColor;
 	background: darken($mainColor, 5%) url("../img/noise66.png") repeat !important;
 }
 
-.dropdown {
+#menu-main-menu, .dropdown {
 	//	background: $mainColor url("../img/noise66.png") repeat !important;
 	//	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+	//	transition: height 0.3s ease-in !important;
+	//	transition: none;
+	transition: 0s !important;
 }
 
 .top-bar-section .dropdown li:hover {
@@ -300,12 +310,12 @@ $menuColor: rgba(0, 0, 0, 0.1) !important;
 	background-repeat: no-repeat;
 	background-position: center center;
 	//	background-size: cover;
-	h2{
+	h2 {
 		text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
 		color: #ffffff;
 		font-family: 'Noto Sans', sans-serif;
 		//		line-height:105%;
-		margin:20px 30px;
+		margin: 20px 30px;
 		display: inline-block;
 	}
 }
@@ -336,6 +346,7 @@ $menuColor: rgba(0, 0, 0, 0.1) !important;
 	background: #fff;
 	opacity: 1;
 }
+
 // -- END Unslider --
 
 // ============== MAIN AREA ==============
@@ -357,8 +368,9 @@ $menuColor: rgba(0, 0, 0, 0.1) !important;
 	text-align: justify;
 	padding: 15px 0 25px 0;
 	//	padding: 8px 0 25px 0;
-//	margin-bottom: 20px;
+	//	margin-bottom: 20px;
 	margin-top: 0;
+	margin-bottom: -12px;
 	strong {
 		background-color: $mainColor;
 		color: #ffffff;
@@ -389,9 +401,10 @@ $menuColor: rgba(0, 0, 0, 0.1) !important;
 //	background-position: center top;
 //}
 
-.services-bg{
-	background-color: $tertiaryColor;
-//	background-color: $mainColor;
+.services-bg {
+	//	background-color: $tertiaryColor;
+	//	background-color: $mainColor;
+	//	background-color: $secondaryColor;
 }
 
 .services-box {
@@ -401,7 +414,7 @@ $menuColor: rgba(0, 0, 0, 0.1) !important;
 		color: #333333;
 	}
 	h6 {
-		a{
+		a {
 			color: $secondaryColor;
 		}
 		a:hover {
@@ -419,12 +432,12 @@ $menuColor: rgba(0, 0, 0, 0.1) !important;
 }
 
 .boxNumber3, .color3 {
-//	background-color: #e75050; //red
+	//	background-color: #e75050; //red
 	background-color: $color3; //yellow
 }
 
 .boxNumber4, .color4 {
-//	background-color: #f9c000; //yellow
+	//	background-color: #f9c000; //yellow
 	background-color: $color4; //red
 }
 
@@ -517,8 +530,8 @@ $menuColor: rgba(0, 0, 0, 0.1) !important;
 	}
 }
 
-#menu-portfolio-genres{
-	.current-menu-item{
+#menu-portfolio-genres {
+	.current-menu-item {
 		text-decoration: underline;
 		color: $mainColor;
 	}
@@ -564,7 +577,7 @@ $menuColor: rgba(0, 0, 0, 0.1) !important;
 	color: red;
 }
 
-.interests{
+.interests {
 	background-color: #E9E9E9;
 	padding: 20px 0;
 	margin: 0 0 20px 0;
@@ -577,19 +590,19 @@ $menuColor: rgba(0, 0, 0, 0.1) !important;
 // ============== FOOTER AREA ==============
 
 .footerBand {
-//	background-color: $tertiaryColor;
+	//	background-color: $tertiaryColor;
 	background-color: $mainColor;
 	padding: 20px 0;
 	width: 100%;
 }
 
-footer{
+footer {
 	//	padding-top: 10px;
 	padding: 10px 10px 0 10px;
 	min-height: 150px;
 }
 
-.footer-menu{
+.footer-menu {
 	li {
 		display: inline;
 		padding: 0 15px;
@@ -605,16 +618,16 @@ footer{
 #footerContactInfo {
 	text-align: right;
 	padding: 0 0 5px 0;
-	a{
+	a {
 		color: $secondaryColor;
 		display: inline-block;
 		margin-bottom: 5px;
 	}
-	a:hover{
+	a:hover {
 		text-decoration: none;
 		color: $linkHover;
 	}
-	img{
+	img {
 		display: inline-block;
 		margin: 5px 0 -2px 5px;
 	}
@@ -630,7 +643,7 @@ hr.embossed {
 
 aside {
 	background-color: $secondaryColor;
-	h5{
+	h5 {
 		color: $mainColor;
 	}
 }
@@ -638,20 +651,42 @@ aside {
 // ============== ASIDE AREA ==============
 
 .sidebar {
-	//	border-left: 1px solid #dddddd;
-	//	border-bottom: 1px solid #dddddd;
-	//	box-shadow: -4px 4px 3px rgba(0, 0, 0, .15);
-	//	background: url("../img/sidebar_right_inner.png") repeat-y left;
-	//	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.15);
-	//	margin-top: -10px;
-	//	min-height: 1000px;
-	h5{
+	background: url("../img/aside-shadow-top.png") left top no-repeat, url("../img/aside-shadow-bottom.png") left bottom no-repeat, url("../img/aside-shadow-left.png") left repeat-y;
+	#menu-services {
+		li{
+			background: red url("../img/aside-li-shadow-left.png") left repeat-y;
+			margin-left: -14px;
+			margin-bottom: 5px;
+			padding-left: 15px;
+			box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+			a{
+				color: #ffffff;
+			}
+			a:hover:before{
+//				content: '▸ ';
+//				content: "\2023 ";
+				content: "\25B8\20";
+			}
+		}
+		.current-menu-item{
+			a:before{
+//				content: '▸ ';
+//				content: "\2023 ";
+				content: "\25B8\20";
+			}
+		}
+		#menu-item-222{background-color: $color1;}
+		#menu-item-217{background-color: $color2;}
+		#menu-item-221{background-color: $color3;}
+		#menu-item-219{background-color: $color4;}
+		#menu-item-220{background-color: $color5;}
+		#menu-item-218{background-color: $color6;}
+	}
+	h5 {
 		padding-bottom: 5px;
 		border-bottom: 1px solid #DDDDDD;
 	}
 }
-
-
 
 // ============== MEDIA QUERIES ==============
 
@@ -667,7 +702,7 @@ aside {
 		min-height: 400px;
 	}
 
-	.services{
+	.services {
 		padding: 0 22px;
 	}
 
@@ -684,7 +719,7 @@ aside {
 		min-height: 200px;
 	}
 
-	.services{
+	.services {
 		padding: 0 14px;
 	}
 
@@ -705,7 +740,7 @@ aside {
 		padding-top: 10px;
 	}
 
-	.quote-bubble{
+	.quote-bubble {
 		display: none;
 	}
 
