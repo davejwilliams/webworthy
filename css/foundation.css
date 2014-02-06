@@ -1473,8 +1473,8 @@ blockquote, blockquote p {
 }
 
 button, .button {
-	border-style: solid;
-	border-width: 1px;
+	/*border-style: solid;*/
+	/*border-width: 1px;*/
 	cursor: pointer;
 	font-family: inherit;
 	font-weight: bold;
@@ -1489,8 +1489,8 @@ button, .button {
 	padding-bottom: 0.8125em;
 	padding-left: 1.5em;
 	font-size: 1em;
-	background-color: #B52725;
-	border-color: #93201e;
+	background-color: #4E7489;
+	/*border-color: #93201e;*/
 	color: #fff
 }
 

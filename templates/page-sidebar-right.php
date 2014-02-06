@@ -7,7 +7,7 @@
 get_header(); ?>
 
 	<!-- Begin Page -->
-	<div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+	<div class="row" style="margin-top: 10px; margin-bottom: 10px; min-height:800px;">
 
 		<!-- Main Content -->
 		<div class="large-9 columns" role="content">

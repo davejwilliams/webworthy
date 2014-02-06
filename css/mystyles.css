@@ -44,6 +44,12 @@ a:hover {
 .spacer {
   height: 20px; }
 
+h1 {
+  font-family: 'Questrial', sans-serif;
+  text-align: center;
+  color: #555555;
+  font-size: 27px !important; }
+
 h3 {
   font-family: 'Questrial', sans-serif;
   text-align: center;
@@ -57,6 +63,11 @@ h6 a {
   color: #3a3a3a;
   font-size: 20px;
   font-weight: 400; }
+
+.examplePic {
+  display: inline-block;
+  border: 4px solid #ffffff;
+  outline: 1px solid #cccccc; }
 
 .big-shadow {
   background: rgba(0, 0, 0, 0.085) url("../img/big_shadow.png") no-repeat center top; }

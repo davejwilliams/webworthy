@@ -90,6 +90,13 @@ a:hover {
 	height: 20px;
 }
 
+h1 {
+	font-family: 'Questrial', sans-serif;
+	text-align: center;
+	color: $headerColor;
+	font-size: 27px !important;
+}
+
 h3 {
 	font-family: 'Questrial', sans-serif;
 	text-align: center;
@@ -103,15 +110,14 @@ h4 {
 
 h6 a {
 	color: $mainColor;
-	//	color: $color6;
 	font-size: 20px;
 	font-weight: 400;
-	//	font-weight: bold;
-	//	display: block;
-	//	padding: 10px;
-	//	background-color: $tertiaryColor;
-	//	border-top: 1px solid $mainColor;
-	//	border-bottom: 1px solid $mainColor;
+}
+
+.examplePic {
+	display: inline-block;
+	border: 4px solid #ffffff;
+	outline: 1px solid #cccccc;
 }
 
 .big-shadow {
